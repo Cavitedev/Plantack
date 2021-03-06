@@ -24,7 +24,7 @@ namespace Plantack.PlayerController
                     ""name"": ""BasicMovement"",
                     ""type"": ""Value"",
                     ""id"": ""36a29f53-eb0c-4f47-a995-d128d88a74ed"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -57,6 +57,14 @@ namespace Plantack.PlayerController
                     ""type"": ""Button"",
                     ""id"": ""412a7589-7da6-4f69-a2b7-8616cea2de0d"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Climb"",
+                    ""type"": ""Value"",
+                    ""id"": ""fd107103-3eca-4cf0-a4f5-9d64144d5b91"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -131,7 +139,7 @@ namespace Plantack.PlayerController
                 {
                     ""name"": """",
                     ""id"": ""921a0095-f2c2-4f09-9287-ed470b83e891"",
-                    ""path"": ""<Gamepad>/dpad/x"",
+                    ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -215,6 +223,83 @@ namespace Plantack.PlayerController
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WS"",
+                    ""id"": ""046c5d39-7017-402a-9c4e-959fa90ca80b"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""bc33619d-904e-4870-8767-2c32c2554c90"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""3de4d5a1-ce82-460b-9343-f71853dd3fd1"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""ArrowKeys"",
+                    ""id"": ""bd3b817c-a782-48fb-af04-2d51a332571f"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""8326ef67-3823-4f0d-b7d9-62c32a3efd06"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""1d631daf-9140-4506-bf53-2d44f49c625f"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9bba6dc-ad47-4ca1-b0a8-ea16f76ed7dd"",
+                    ""path"": ""<Gamepad>/leftStick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -255,6 +340,7 @@ namespace Plantack.PlayerController
             m_Keys_Fall = m_Keys.FindAction("Fall", throwIfNotFound: true);
             m_Keys_Dash = m_Keys.FindAction("Dash", throwIfNotFound: true);
             m_Keys_Run = m_Keys.FindAction("Run", throwIfNotFound: true);
+            m_Keys_Climb = m_Keys.FindAction("Climb", throwIfNotFound: true);
             // Mouse
             m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
             m_Mouse_Newaction = m_Mouse.FindAction("New action", throwIfNotFound: true);
@@ -312,6 +398,7 @@ namespace Plantack.PlayerController
         private readonly InputAction m_Keys_Fall;
         private readonly InputAction m_Keys_Dash;
         private readonly InputAction m_Keys_Run;
+        private readonly InputAction m_Keys_Climb;
         public struct KeysActions
         {
             private @PlayerController m_Wrapper;
@@ -321,6 +408,7 @@ namespace Plantack.PlayerController
             public InputAction @Fall => m_Wrapper.m_Keys_Fall;
             public InputAction @Dash => m_Wrapper.m_Keys_Dash;
             public InputAction @Run => m_Wrapper.m_Keys_Run;
+            public InputAction @Climb => m_Wrapper.m_Keys_Climb;
             public InputActionMap Get() { return m_Wrapper.m_Keys; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -345,6 +433,9 @@ namespace Plantack.PlayerController
                     @Run.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
                     @Run.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
                     @Run.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
+                    @Climb.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
+                    @Climb.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
+                    @Climb.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
                 }
                 m_Wrapper.m_KeysActionsCallbackInterface = instance;
                 if (instance != null)
@@ -364,6 +455,9 @@ namespace Plantack.PlayerController
                     @Run.started += instance.OnRun;
                     @Run.performed += instance.OnRun;
                     @Run.canceled += instance.OnRun;
+                    @Climb.started += instance.OnClimb;
+                    @Climb.performed += instance.OnClimb;
+                    @Climb.canceled += instance.OnClimb;
                 }
             }
         }
@@ -408,6 +502,7 @@ namespace Plantack.PlayerController
             void OnFall(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
+            void OnClimb(InputAction.CallbackContext context);
         }
         public interface IMouseActions
         {

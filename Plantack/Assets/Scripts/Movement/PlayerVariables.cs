@@ -1,6 +1,5 @@
 using UnityEngine;
-
-public class PlayerVariables : MonoBehaviour
+public class PlayerVariables
 {
     #region
     private float acceleration = 0.015f;
@@ -8,7 +7,7 @@ public class PlayerVariables : MonoBehaviour
     private float runSpeed = 6f;
     private float walkSpeed = 4f;
     private float dashSpeed = 12f;
-    private float jumpForce = 3.5f;
+    private float jumpForce = 3f;
     #endregion
 
     #region Variable Calls
