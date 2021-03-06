@@ -13,12 +13,10 @@ namespace Plantack.PlayerController
         }
         private void GetY(GetInput input,PlayerVariables vars, Rigidbody2D rb)
         {
-            if (input.Jump)
-                XYdir.y = Jump();
-            else if (ladder)
+            if (ladder)
                 XYdir.y = input.Climb;
             else
-                XYdir.y = rb.velocity.y;
+                XYdir.y = 1;
 
         }
         private void GetX(GetInput input)
@@ -26,13 +24,7 @@ namespace Plantack.PlayerController
             if (!input.Dash)
                 XYdir.x = input.Basic;
             else
-                XYdir.x = 1;
-        }
-        
-        float Jump()
-        {
-            float Ydir = 0f;
-            return Ydir;
+                XYdir.x = 1f;
         }
     }
 }
