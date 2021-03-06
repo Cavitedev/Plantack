@@ -9,6 +9,6 @@ The story is one of an awaken person that was frozen cryogenically and appears i
 
 ## UI
 
-[Enviroment forest]([Kauzz | Forest (16x16) by Kauzz (itch.io)](https://kauzz.itch.io/pixelforest))
+[Enviroment forest](https://kauzz.itch.io/pixelforest)
 
-[Characters]([Free 3 Character Sprite Sheets Pixel Art - CraftPix.net](https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/))
+[Characters](https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/)
