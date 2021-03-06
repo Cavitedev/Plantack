@@ -14,6 +14,7 @@ namespace Plantack.PlayerController
         #endregion
         void Start()
         {
+            Ydir = Vector3.up;
             input = gameObject.GetComponent<GetInput>();
             Character = new PlayerVariables();
             speedCheck = gameObject.GetComponent<SpeedCheck>();
