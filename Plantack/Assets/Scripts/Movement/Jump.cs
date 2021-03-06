@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
     bool jump;
-    public float Activate()
+    public float Activate(float FallForce)
     {
-        return
+        return FallForce;
     }
 }

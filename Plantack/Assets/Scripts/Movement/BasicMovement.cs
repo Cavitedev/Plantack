@@ -23,7 +23,6 @@ namespace Plantack.PlayerController
         {
             Xdir = GetX(input);
             maxSpeed = speedCheck.Activate(input, Character);
-            FallForce = 
         }
         private Vector3 GetX(GetInput input)
         {
