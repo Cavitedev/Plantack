@@ -28,6 +28,10 @@ namespace Plantack.PlayerController
         {
             get => Controller.Keys.BasicMovement.ReadValue<float>();
         }
+        public float Climb
+        {
+            get => Controller.Keys.Climb.ReadValue<float>();
+        }
         public bool Jump
         {
             get => Controller.Keys.Jump.triggered;

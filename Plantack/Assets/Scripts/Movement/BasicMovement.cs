@@ -1,35 +1,38 @@
 using UnityEngine;
 namespace Plantack.PlayerController
 {
-    [RequireComponent(typeof(GetInput), typeof(SpeedCheck))]
+    [RequireComponent(typeof(GetInput), typeof(SpeedCheck), typeof(GetDir))]
     public class BasicMovement : MonoBehaviour
     {
         #region Variables
+        Rigidbody2D rb;
         GetInput input;
         PlayerVariables Character;
         SpeedCheck speedCheck;
+        GetDir getDir;
 
         private float maxSpeed, moveSpeed, FallForce, gravity;
-        private Vector3 Xdir, Ydir;
+        private Vector3 XYdir;
         #endregion
         void Start()
         {
-            Ydir = Vector3.up;
-            input = gameObject.GetComponent<GetInput>();
+            rb = GetComponent<Rigidbody2D>();
+            input = GetComponent<GetInput>();
             Character = new PlayerVariables();
-            speedCheck = gameObject.GetComponent<SpeedCheck>();
+            speedCheck = GetComponent<SpeedCheck>();
+            getDir = GetComponent<GetDir>();
         }
-        
+
+        private void FixedUpdate()
+        {
+            Activate();
+        }
         public void Activate()
         {
-            Xdir = GetX(input);
+            XYdir = getDir.Activate(input, Character, rb);
             maxSpeed = speedCheck.Activate(input, Character);
-        }
-        private Vector3 GetX(GetInput input)
-        {
-            Vector3 Xdir = Vector3.zero;
-            Xdir.x = input.Basic;
-            return Xdir;
-        }
+            rb.velocity = XYdir;
+        }       
+        
     }
 }
