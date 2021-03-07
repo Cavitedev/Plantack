@@ -11,6 +11,7 @@ public class CharacterMover : MonoBehaviour
 
     Vector2 XYdir;
     Quaternion rot;
+    bool ladder, moveR, moveL;
     #endregion
 
     private void Start()
@@ -23,23 +24,50 @@ public class CharacterMover : MonoBehaviour
     {
         rb.velocity = XYdir;
         XYdir = Vector2.zero;
+        Gravity();
+        MoveRight();
+        MoveLeft();
         transform.rotation = rot;
     }
+    #region MoveLeft
+    public void moveLon() => moveL = true;
+    public void moveLoff() => moveL = false;
     public void MoveLeft()
     {
-        XYdir.x = -1;
-        rot.y = 180f;
-        Debug.Log("Clicked Left");
+        if (!ladder && moveL)
+        {
+            XYdir.x = -1;
+            rot.y = 180f;
+            Debug.Log("Clicked Left");
+        }
     }
-    public void MoveRight()
+    #endregion
+    #region MoveRight
+    public void moveRon() => moveR = true;
+    public void moveRoff() => moveR = false;
+    private void MoveRight()
     {
-        XYdir.x = 1;
-        rot.y = 0f;
-        Debug.Log("Clicked Right");
-
+        if (!ladder && moveR)
+        {
+            XYdir.x = 1;
+            rot.y = 0f;
+            Debug.Log("Clicked Right");
+        }
+    }
+    #endregion
+    void Gravity()
+    {
+        XYdir.y = rb.velocity.y;
     }
     public void Climb()
     {
-        XYdir.y = 1;
-    }
+        if (!ladder)
+        {
+            XYdir.y = 1;
+        }
+        else
+        {
+
+        }
+        }
 }
