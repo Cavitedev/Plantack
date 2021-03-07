@@ -19,9 +19,12 @@ namespace Plantack.UI
         
         
         private Queue<String> _currentMessages = new Queue<string>();
-
+        
         public void ShowMessages(String[] messages)
         {
+            
+            StopAllCoroutines();
+
             _currentMessages.Clear();
             foreach (string message in messages)
             {
@@ -49,6 +52,8 @@ namespace Plantack.UI
             {
                 if (HasMoreMessages)
                 {
+                    StopAllCoroutines();
+
                     StartCoroutine(DisplayMessage(_currentMessages.Dequeue()));
                 }
                 else
