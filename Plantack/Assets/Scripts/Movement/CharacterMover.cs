@@ -47,8 +47,15 @@ public class CharacterMover : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
         transform.rotation = rot;
         FallForce();
+        Animate();
     }
 
+    void Animate()
+    {
+        anim.SetFloat("Movement", Mathf.Abs(XYdir.x));
+        anim.SetBool("Running", running);
+        anim.SetBool("Climbing", climbing);
+    }
     #region MoveLeft
     public void moveLon() => moveL = true;
     public void moveLoff() => moveL = false;
@@ -91,6 +98,7 @@ public class CharacterMover : MonoBehaviour
         if (!climbing && isGrounded)
         {
             fallForce = Character.JumpForce;
+            anim.SetTrigger("Jump");
             Debug.Log("Has Jumped");
         }
     }
