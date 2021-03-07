@@ -11,9 +11,10 @@ namespace Background
 
         private float _spaceToUpdateBackground;
         private float _threshold = 1;
-        private int _firstBackgroundIndex = 0;
-        private int LastBackgroundIndex => _firstBackgroundIndex > 0 ? _firstBackgroundIndex - 1 : backgrounds.Length - 1;
+        private int _firstBackgroundIndex;
 
+        private int LastBackgroundIndex =>
+            _firstBackgroundIndex > 0 ? _firstBackgroundIndex - 1 : backgrounds.Length - 1;
 
 
         private void Start()
@@ -26,20 +27,60 @@ namespace Background
         private void Update()
         {
             float targetX = target.position.x;
-            float firstBackgroundXPos = backgrounds[_firstBackgroundIndex].position.x;
-            float lastBackgroundXPos = backgrounds[LastBackgroundIndex].position.x;
-            if (firstBackgroundXPos - size / 2 > targetX - _spaceToUpdateBackground)
+            Vector3 firstBackgroundPos = backgrounds[_firstBackgroundIndex].position;
+            Vector3 lastBackgroundPos = backgrounds[LastBackgroundIndex].position;
+            UpdateBackgroundsPos(targetX, firstBackgroundPos, lastBackgroundPos);
+        }
+
+        private void UpdateBackgroundsPos(float targetX, Vector3 firstBackgroundPos, Vector3 lastBackgroundPos)
+        {
+            if (IsTargetTooLeft(firstBackgroundPos.x, targetX))
             {
-                Vector3 pos = backgrounds[LastBackgroundIndex].position;
-                backgrounds[LastBackgroundIndex].position = new Vector3(firstBackgroundXPos - size, pos.y, pos.z);
-                _firstBackgroundIndex = LastBackgroundIndex;
-            }else if (lastBackgroundXPos + size / 2 < targetX + _spaceToUpdateBackground)
+                MoveLastBackgroundToFirstPos(firstBackgroundPos);
+                MoveIndexLeft();
+            }
+            else if (IsTargetTooRight(lastBackgroundPos.x, targetX))
             {
-                Vector3 pos = backgrounds[_firstBackgroundIndex].position;
-                backgrounds[_firstBackgroundIndex].position = new Vector3(firstBackgroundXPos + size, pos.y, pos.z);
-                _firstBackgroundIndex +=1 ;
-                _firstBackgroundIndex %= backgrounds.Length;
+                MoveFirstBackgroundToLastPos(lastBackgroundPos);
+                MoveIndexRight();
             }
         }
+
+        private bool IsTargetTooLeft(float firstBackgroundXPos, float targetX)
+        {
+            return firstBackgroundXPos - size / 2 > targetX - _spaceToUpdateBackground;
+        }
+        
+        private bool IsTargetTooRight(float lastBackgroundXPos, float targetX)
+        {
+            return lastBackgroundXPos + size / 2 < targetX + _spaceToUpdateBackground;
+        }
+        
+        private void MoveFirstBackgroundToLastPos(Vector3 lastBackgroundPos)
+        {
+            backgrounds[_firstBackgroundIndex].position =
+                new Vector3(lastBackgroundPos.x + size, lastBackgroundPos.y, lastBackgroundPos.z);
+        }
+
+        private void MoveLastBackgroundToFirstPos(Vector3 firstBackgroundPos)
+        {
+            backgrounds[LastBackgroundIndex].position = new Vector3(firstBackgroundPos.x - size,
+                firstBackgroundPos.y, firstBackgroundPos.z);
+        }
+
+        private void MoveIndexLeft()
+        {
+            _firstBackgroundIndex = LastBackgroundIndex;
+        }
+
+        private void MoveIndexRight()
+        {
+            _firstBackgroundIndex += 1;
+            _firstBackgroundIndex %= backgrounds.Length;
+        }
+
+
+
+
     }
 }
