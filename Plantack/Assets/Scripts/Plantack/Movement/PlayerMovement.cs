@@ -7,7 +7,7 @@ namespace Plantack.Movement
     [RequireComponent(typeof(GetInput), typeof(Rigidbody2D))]
     public class PlayerMovement : MonoBehaviour
     {
-        private const float DISTANCEFLOOR = 0.1f;
+        private const float DISTANCEFLOORTHRESHOLD = 0.05f;
 
         [SerializeField] private AnimationCurve dashCurve;
         [SerializeField] private float dashSpeed = 5f;
@@ -41,7 +41,6 @@ namespace Plantack.Movement
 
         void Update()
         {
-            Debug.Log(IsGrounded());
 
             float xMovement = _input.Basic;
             float velY = rb.velocity.y;
@@ -69,7 +68,7 @@ namespace Plantack.Movement
                 return;
             }
 
-            if (_input.Jump)
+            if (_input.Jump && IsGrounded())
             {
                 velY = jumpForce;
             }
@@ -83,19 +82,18 @@ namespace Plantack.Movement
             ContactFilter2D filter2D = new ContactFilter2D();
             filter2D.SetLayerMask(enviromentMask.value);
             List<RaycastHit2D> hits = new List<RaycastHit2D>();
-            int hit1 = Physics2D.Raycast(foot1.position, Vector2.down,
-                filter2D, hits, DISTANCEFLOOR);
+            RaycastHit2D hit1 = Physics2D.Raycast(foot1.position, Vector2.down,
+                 DISTANCEFLOORTHRESHOLD,  enviromentMask.value);
 
 
-            
-            if (hit1 != 0)
+            if (hit1.collider != null)
             {
                 return true;
             }
 
-            int hit2 = Physics2D.Raycast(foot2.position, Vector2.down,
-                filter2D, hits, DISTANCEFLOOR);
-            return hit2 != 0;
+            RaycastHit2D hit2 = Physics2D.Raycast(foot2.position, Vector2.down,
+                DISTANCEFLOORTHRESHOLD,  enviromentMask.value);
+            return hit2.collider != null;
         }
     }
 }
