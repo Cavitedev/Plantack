@@ -16,10 +16,11 @@ namespace Plantack.PlayerController
         private float maxSpeed, moveSpeed, FallForce, gravity;
         [SerializeField]
         private Vector2 XYdir;
+        private Quaternion rot;
         #endregion
         void Start()
         {
-            anim = GetComponent<Animator>();
+            anim = transform.Find("Player").GetComponent<Animator>();
             rb = GetComponent<Rigidbody2D>();
             input = GetComponent<GetInput>();
             Character = new PlayerVariables();
@@ -37,7 +38,8 @@ namespace Plantack.PlayerController
         public void Activate()
         {
             XYdir = getDir.Activate(input, Character, rb);
-            anim.SetFloat("Moving", Mathf.Abs(XYdir.x));
+            anim.SetFloat("Movement", Mathf.Abs(XYdir.x));
+            GetRot();
             maxSpeed = speedCheck.Activate(input, Character, anim);
             moveSpeed = getSpeed(moveSpeed, maxSpeed);
             JumpOn();
@@ -72,6 +74,14 @@ namespace Plantack.PlayerController
         {
             XYdir.x = XYdir.x * moveSpeed;
             XYdir.y = XYdir.y * FallForce;
+        }
+        void GetRot()
+        {
+            if (input.Basic > 0)
+                rot.y = 0f;
+            else if (input.Basic < 0)
+                rot.y = 180f;
+            transform.rotation = rot;
         }
     }
 }

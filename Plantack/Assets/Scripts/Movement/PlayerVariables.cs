@@ -4,10 +4,10 @@ public class PlayerVariables
     #region
     private float acceleration = 0.015f;
     private float gravity = -9.81f;
-    private float runSpeed = 6f;
-    private float walkSpeed = 4f;
+    private float runSpeed = 8f;
+    private float walkSpeed = 6f;
     private float dashSpeed = 12f;
-    private float jumpForce = 3f;
+    private float jumpForce = 5f;
     private float speedError = 0.05f;
     #endregion
 
