@@ -14,11 +14,11 @@ namespace Plantack.Movement.Dash
         private float _dashCooldown;
 
 
-        public bool Dash(bool dash_input, float xMovement)
+        public bool Dash(bool dashInput, float xMovement)
         {
             if (_dashCooldown <= 0f)
             {
-                if (dash_input)
+                if (dashInput)
                 {
                     movement.StartDash();
                     movement.Move(1 - _dashCooldown / dashTime, xMovement);
