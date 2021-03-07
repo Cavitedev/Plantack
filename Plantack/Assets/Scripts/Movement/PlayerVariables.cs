@@ -7,7 +7,7 @@ public class PlayerVariables
     private float runSpeed = 6f;
     private float walkSpeed = 4f;
     private float dashSpeed = 12f;
-    private float jumpForce = 3f;
+    private float jumpForce = 5f;
     private float speedError = 0.05f;
     #endregion
 

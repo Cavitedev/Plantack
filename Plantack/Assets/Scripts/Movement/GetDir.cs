@@ -4,6 +4,7 @@ namespace Plantack.PlayerController
     public class GetDir : MonoBehaviour
     {
         bool ladder = false;
+        [SerializeField]
         Vector2 XYdir;
         public Vector2 Activate(GetInput Input, PlayerVariables Character, Rigidbody2D rb)
         {

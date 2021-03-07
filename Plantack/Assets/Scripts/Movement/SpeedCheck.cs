@@ -14,15 +14,10 @@ namespace Plantack.PlayerController
             if (input.Run)
                 running = !running;
             if (running)
-            {
                 maxSpeed = Character.RunSpeed;
-                anim.SetFloat("Running", 1);
-            }
             else
-            {
                 maxSpeed = Character.WalkSpeed;
-                anim.SetFloat("Running", 0);
-            }
+            anim.SetBool("Running", running);
             return maxSpeed;
         }
         #endregion
