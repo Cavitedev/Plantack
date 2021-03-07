@@ -1,9 +1,8 @@
-﻿using System;
-using Plantack.Player;
+﻿using Plantack.Player;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace Plantack.UI
 {
     public class CoinsUI : MonoBehaviour
     {

@@ -48,6 +48,11 @@ namespace Plantack.PlayerController
         {
             get => Controller.Keys.Run.triggered;
         }
+        
+        public bool Enter
+        {
+            get => Controller.Keys.Enter.triggered;
+        }
         #endregion
     }
 }

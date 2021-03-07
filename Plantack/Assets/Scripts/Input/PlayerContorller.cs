@@ -67,6 +67,14 @@ namespace Plantack.PlayerController
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""e15b5464-1512-4e51-94e8-531315be2275"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -278,6 +286,39 @@ namespace Plantack.PlayerController
                     ""action"": ""Climb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3487c78c-181d-44bb-b8e6-b856ca6baf7f"",
+                    ""path"": ""<Touchscreen>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""59259656-3966-4a62-a661-2a306881aaf9"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e1f4d4c4-3b47-4b24-990d-ff23b35d51e8"",
+                    ""path"": ""<Mouse>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -319,6 +360,7 @@ namespace Plantack.PlayerController
             m_Keys_Dash = m_Keys.FindAction("Dash", throwIfNotFound: true);
             m_Keys_Run = m_Keys.FindAction("Run", throwIfNotFound: true);
             m_Keys_Climb = m_Keys.FindAction("Climb", throwIfNotFound: true);
+            m_Keys_Enter = m_Keys.FindAction("Enter", throwIfNotFound: true);
             // Mouse
             m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
             m_Mouse_Newaction = m_Mouse.FindAction("New action", throwIfNotFound: true);
@@ -377,6 +419,7 @@ namespace Plantack.PlayerController
         private readonly InputAction m_Keys_Dash;
         private readonly InputAction m_Keys_Run;
         private readonly InputAction m_Keys_Climb;
+        private readonly InputAction m_Keys_Enter;
         public struct KeysActions
         {
             private @PlayerController m_Wrapper;
@@ -387,6 +430,7 @@ namespace Plantack.PlayerController
             public InputAction @Dash => m_Wrapper.m_Keys_Dash;
             public InputAction @Run => m_Wrapper.m_Keys_Run;
             public InputAction @Climb => m_Wrapper.m_Keys_Climb;
+            public InputAction @Enter => m_Wrapper.m_Keys_Enter;
             public InputActionMap Get() { return m_Wrapper.m_Keys; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -414,6 +458,9 @@ namespace Plantack.PlayerController
                     @Climb.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
                     @Climb.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
                     @Climb.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
+                    @Enter.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
+                    @Enter.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
+                    @Enter.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
                 }
                 m_Wrapper.m_KeysActionsCallbackInterface = instance;
                 if (instance != null)
@@ -436,6 +483,9 @@ namespace Plantack.PlayerController
                     @Climb.started += instance.OnClimb;
                     @Climb.performed += instance.OnClimb;
                     @Climb.canceled += instance.OnClimb;
+                    @Enter.started += instance.OnEnter;
+                    @Enter.performed += instance.OnEnter;
+                    @Enter.canceled += instance.OnEnter;
                 }
             }
         }
@@ -481,6 +531,7 @@ namespace Plantack.PlayerController
             void OnDash(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
             void OnClimb(InputAction.CallbackContext context);
+            void OnEnter(InputAction.CallbackContext context);
         }
         public interface IMouseActions
         {
