@@ -8,7 +8,8 @@ namespace Plantack.Player
     public class PlayerTrigger : MonoBehaviour
     {
         
-        private const String collectableTag = "Collectable";
+        private const String _collectableTag = "Collectable";
+        private const String _interactableTag = "Interactable";
         private PlayerStats _playerStats;
 
         private void Start()
@@ -20,11 +21,15 @@ namespace Plantack.Player
         private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log($"Collision with {other}");
-            if (other.gameObject.CompareTag(collectableTag))
+            if (other.gameObject.CompareTag(_collectableTag))
             {
                 
-                Iinteractable interactable = other.gameObject.GetComponent<Iinteractable>();
-                interactable.Interact(_playerStats);
+                Icollectable icollectable = other.gameObject.GetComponent<Icollectable>();
+                icollectable.Collect(_playerStats);
+            }else if (other.gameObject.CompareTag(_interactableTag))
+            {
+                IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
+                interactable.GetInteractDelegate().Invoke();
             }
         }
         

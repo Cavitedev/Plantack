@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Plantack.Interactable
 {
-    public interface Iinteractable
+    public interface Icollectable
     {
-        public void Interact (PlayerStats playerStats);
+        public void Collect (PlayerStats playerStats);
     }
 }
