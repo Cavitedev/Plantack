@@ -1,7 +1,7 @@
 using Plantack.Input;
-using Plantack.Movement;
 using UnityEngine;
-namespace Plantack.PlayerController
+
+namespace Plantack.Movement
 {
     public class SpeedCheck : MonoBehaviour
     {

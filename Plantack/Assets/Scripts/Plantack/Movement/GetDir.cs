@@ -1,6 +1,7 @@
 using Plantack.Input;
 using UnityEngine;
-namespace Plantack.PlayerController
+
+namespace Plantack.Movement
 {
     public class GetDir : MonoBehaviour
     {

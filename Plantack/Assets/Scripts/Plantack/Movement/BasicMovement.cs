@@ -1,5 +1,4 @@
 using Plantack.Input;
-using Plantack.PlayerController;
 using UnityEngine;
 
 namespace Plantack.Movement

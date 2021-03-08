@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+namespace Plantack.Movement
 {
-    bool jump;
-    public float Activate(float FallForce)
+    public class Jump : MonoBehaviour
     {
-        return FallForce;
+        bool jump;
+        public float Activate(float FallForce)
+        {
+            return FallForce;
+        }
     }
 }

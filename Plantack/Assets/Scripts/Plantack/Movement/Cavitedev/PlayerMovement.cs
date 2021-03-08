@@ -8,7 +8,7 @@ namespace Plantack.Movement.Cavitedev
     [RequireComponent(typeof(GetInput), typeof(Rigidbody2D))]
     public class PlayerMovement : MonoBehaviour
     {
-        private const float DISTANCEFLOORTHRESHOLD = 0.05f;
+        private const float DISTANCEFLOORTHRESHOLD = 0.2f;
 
         [SerializeField] private PlayerDash playerDash;
 
