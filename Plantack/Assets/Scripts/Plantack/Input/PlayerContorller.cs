@@ -314,7 +314,7 @@ namespace Plantack.Input
                     ""id"": ""b9bba6dc-ad47-4ca1-b0a8-ea16f76ed7dd"",
                     ""path"": ""<AndroidGamepad>/leftStick/y"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Invert"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Climb"",
                     ""isComposite"": false,
