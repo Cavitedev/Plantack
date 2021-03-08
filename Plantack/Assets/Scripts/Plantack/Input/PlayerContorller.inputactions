@@ -132,10 +132,10 @@
                 {
                     "name": "",
                     "id": "921a0095-f2c2-4f09-9287-ed470b83e891",
-                    "path": "<Gamepad>/leftStick/x",
+                    "path": "<AndroidGamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "BasicMovement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -146,7 +146,18 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab280a97-040e-4cc9-84d7-cefc9c6c351e",
+                    "path": "<AndroidGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -157,7 +168,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "Fall",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -168,7 +179,18 @@
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
+                    "action": "Fall",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fe2508f-e946-40d7-a4f0-4a77faf6f7e2",
+                    "path": "<AndroidGamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Fall",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -190,7 +212,18 @@
                     "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74ec818e-a050-4320-89cb-0431e4658f2d",
+                    "path": "<AndroidGamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -264,10 +297,10 @@
                 {
                     "name": "",
                     "id": "b9bba6dc-ad47-4ca1-b0a8-ea16f76ed7dd",
-                    "path": "<Gamepad>/leftStick/y",
+                    "path": "<AndroidGamepad>/leftStick/y",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Climb",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -335,5 +368,16 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": []
+        },
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": []
+        }
+    ]
 }
