@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plantack.Movement.Dash
+namespace Plantack.Movement.Cavitedev.Dash
 {
     public class PlayerDashAnimator
     {

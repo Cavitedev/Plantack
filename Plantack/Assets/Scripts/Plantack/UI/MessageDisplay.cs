@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Plantack.PlayerController;
+using Plantack.Input;
 using UnityEngine;
 using UnityEngine.UI;
 

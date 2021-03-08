@@ -1,5 +1,6 @@
 using UnityEngine;
-namespace Plantack.PlayerController
+
+namespace Plantack.Input
 {
     public class GetInput : MonoBehaviour
     {

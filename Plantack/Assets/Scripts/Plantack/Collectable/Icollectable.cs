@@ -1,9 +1,8 @@
 ﻿using Plantack.Player;
-using UnityEngine;
 
-namespace Plantack.Interactable
+namespace Plantack.Collectable
 {
-    public interface Icollectable
+    public interface ICollectable
     {
         public void Collect (PlayerStats playerStats);
     }

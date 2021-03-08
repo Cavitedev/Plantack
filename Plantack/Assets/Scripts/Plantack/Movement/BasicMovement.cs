@@ -1,5 +1,8 @@
+using Plantack.Input;
+using Plantack.PlayerController;
 using UnityEngine;
-namespace Plantack.PlayerController
+
+namespace Plantack.Movement
 {
     [RequireComponent(typeof(GetInput), typeof(SpeedCheck), typeof(GetDir))]
     public class BasicMovement : MonoBehaviour

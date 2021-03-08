@@ -1,4 +1,5 @@
 ﻿using System;
+using Plantack.Collectable;
 using UnityEngine;
 using Plantack.Interactable;
 
@@ -24,7 +25,7 @@ namespace Plantack.Player
             if (other.gameObject.CompareTag(_collectableTag))
             {
                 
-                Icollectable icollectable = other.gameObject.GetComponent<Icollectable>();
+                ICollectable icollectable = other.gameObject.GetComponent<ICollectable>();
                 icollectable.Collect(_playerStats);
             }else if (other.gameObject.CompareTag(_interactableTag))
             {

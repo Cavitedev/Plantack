@@ -1,5 +1,4 @@
-﻿using Plantack.Player;
-using Plantack.UI;
+﻿using Plantack.UI;
 using UnityEngine;
 
 namespace Plantack.Interactable

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Plantack.Movement.Dash;
-using Plantack.PlayerController;
+using Plantack.Input;
+using Plantack.Movement.Cavitedev.Dash;
 using UnityEngine;
 
-namespace Plantack.Movement
+namespace Plantack.Movement.Cavitedev
 {
     [RequireComponent(typeof(GetInput), typeof(Rigidbody2D))]
     public class PlayerMovement : MonoBehaviour
