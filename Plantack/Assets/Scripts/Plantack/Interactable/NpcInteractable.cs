@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Plantack.Interactable
 {
-    public class NpcIcollectable : MonoBehaviour, IInteractable
+    public class NpcInteractable : MonoBehaviour, IInteractable
     {
         
         [SerializeField] private MessageDisplay messageDisplay;
