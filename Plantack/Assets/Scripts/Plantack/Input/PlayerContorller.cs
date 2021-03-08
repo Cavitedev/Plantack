@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Input/PlayerContorller.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Plantack/Input/PlayerContorller.inputactions'
 
 using System;
 using System.Collections;
@@ -17,11 +17,11 @@ namespace Plantack.Input
     ""name"": ""PlayerContorller"",
     ""maps"": [
         {
-            ""name"": ""Keys"",
+            ""name"": ""InputMap"",
             ""id"": ""e9be3853-4742-4e83-8924-2296ca85c2ab"",
             ""actions"": [
                 {
-                    ""name"": ""BasicMovement"",
+                    ""name"": ""Basic"",
                     ""type"": ""Value"",
                     ""id"": ""36a29f53-eb0c-4f47-a995-d128d88a74ed"",
                     ""expectedControlType"": ""Axis"",
@@ -85,7 +85,7 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -96,7 +96,7 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -107,7 +107,7 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -118,7 +118,7 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -129,7 +129,7 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -140,18 +140,18 @@ namespace Plantack.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""action"": ""Basic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
                     ""id"": ""921a0095-f2c2-4f09-9287-ed470b83e891"",
-                    ""path"": ""<Gamepad>/leftStick/x"",
+                    ""path"": ""<AndroidGamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""BasicMovement"",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Basic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -161,7 +161,18 @@ namespace Plantack.Input
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab280a97-040e-4cc9-84d7-cefc9c6c351e"",
+                    ""path"": ""<AndroidGamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -172,7 +183,7 @@ namespace Plantack.Input
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Fall"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -183,7 +194,18 @@ namespace Plantack.Input
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Fall"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8fe2508f-e946-40d7-a4f0-4a77faf6f7e2"",
+                    ""path"": ""<AndroidGamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Fall"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -205,7 +227,18 @@ namespace Plantack.Input
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Run"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74ec818e-a050-4320-89cb-0431e4658f2d"",
+                    ""path"": ""<AndroidGamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -279,10 +312,10 @@ namespace Plantack.Input
                 {
                     ""name"": """",
                     ""id"": ""b9bba6dc-ad47-4ca1-b0a8-ea16f76ed7dd"",
-                    ""path"": ""<Gamepad>/leftStick/y"",
+                    ""path"": ""<AndroidGamepad>/leftStick/y"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Climb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -290,10 +323,10 @@ namespace Plantack.Input
                 {
                     ""name"": """",
                     ""id"": ""3487c78c-181d-44bb-b8e6-b856ca6baf7f"",
-                    ""path"": ""<Touchscreen>/press"",
+                    ""path"": ""<AndroidGamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Enter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -304,7 +337,7 @@ namespace Plantack.Input
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Enter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -321,49 +354,30 @@ namespace Plantack.Input
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""Mouse"",
-            ""id"": ""67d11f47-ffaf-44cc-9886-57525fdc8631"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""fb18fcae-acb9-46c5-af4f-0469980e7bff"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""c3eab96b-1585-42f8-8c12-afbeb1302c7d"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": []
+        },
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": []
+        }
+    ]
 }");
-            // Keys
-            m_Keys = asset.FindActionMap("Keys", throwIfNotFound: true);
-            m_Keys_BasicMovement = m_Keys.FindAction("BasicMovement", throwIfNotFound: true);
-            m_Keys_Jump = m_Keys.FindAction("Jump", throwIfNotFound: true);
-            m_Keys_Fall = m_Keys.FindAction("Fall", throwIfNotFound: true);
-            m_Keys_Dash = m_Keys.FindAction("Dash", throwIfNotFound: true);
-            m_Keys_Run = m_Keys.FindAction("Run", throwIfNotFound: true);
-            m_Keys_Climb = m_Keys.FindAction("Climb", throwIfNotFound: true);
-            m_Keys_Enter = m_Keys.FindAction("Enter", throwIfNotFound: true);
-            // Mouse
-            m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
-            m_Mouse_Newaction = m_Mouse.FindAction("New action", throwIfNotFound: true);
+            // InputMap
+            m_InputMap = asset.FindActionMap("InputMap", throwIfNotFound: true);
+            m_InputMap_Basic = m_InputMap.FindAction("Basic", throwIfNotFound: true);
+            m_InputMap_Jump = m_InputMap.FindAction("Jump", throwIfNotFound: true);
+            m_InputMap_Fall = m_InputMap.FindAction("Fall", throwIfNotFound: true);
+            m_InputMap_Dash = m_InputMap.FindAction("Dash", throwIfNotFound: true);
+            m_InputMap_Run = m_InputMap.FindAction("Run", throwIfNotFound: true);
+            m_InputMap_Climb = m_InputMap.FindAction("Climb", throwIfNotFound: true);
+            m_InputMap_Enter = m_InputMap.FindAction("Enter", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -410,64 +424,64 @@ namespace Plantack.Input
             asset.Disable();
         }
 
-        // Keys
-        private readonly InputActionMap m_Keys;
-        private IKeysActions m_KeysActionsCallbackInterface;
-        private readonly InputAction m_Keys_BasicMovement;
-        private readonly InputAction m_Keys_Jump;
-        private readonly InputAction m_Keys_Fall;
-        private readonly InputAction m_Keys_Dash;
-        private readonly InputAction m_Keys_Run;
-        private readonly InputAction m_Keys_Climb;
-        private readonly InputAction m_Keys_Enter;
-        public struct KeysActions
+        // InputMap
+        private readonly InputActionMap m_InputMap;
+        private IInputMapActions m_InputMapActionsCallbackInterface;
+        private readonly InputAction m_InputMap_Basic;
+        private readonly InputAction m_InputMap_Jump;
+        private readonly InputAction m_InputMap_Fall;
+        private readonly InputAction m_InputMap_Dash;
+        private readonly InputAction m_InputMap_Run;
+        private readonly InputAction m_InputMap_Climb;
+        private readonly InputAction m_InputMap_Enter;
+        public struct InputMapActions
         {
             private @PlayerController m_Wrapper;
-            public KeysActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
-            public InputAction @BasicMovement => m_Wrapper.m_Keys_BasicMovement;
-            public InputAction @Jump => m_Wrapper.m_Keys_Jump;
-            public InputAction @Fall => m_Wrapper.m_Keys_Fall;
-            public InputAction @Dash => m_Wrapper.m_Keys_Dash;
-            public InputAction @Run => m_Wrapper.m_Keys_Run;
-            public InputAction @Climb => m_Wrapper.m_Keys_Climb;
-            public InputAction @Enter => m_Wrapper.m_Keys_Enter;
-            public InputActionMap Get() { return m_Wrapper.m_Keys; }
+            public InputMapActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Basic => m_Wrapper.m_InputMap_Basic;
+            public InputAction @Jump => m_Wrapper.m_InputMap_Jump;
+            public InputAction @Fall => m_Wrapper.m_InputMap_Fall;
+            public InputAction @Dash => m_Wrapper.m_InputMap_Dash;
+            public InputAction @Run => m_Wrapper.m_InputMap_Run;
+            public InputAction @Climb => m_Wrapper.m_InputMap_Climb;
+            public InputAction @Enter => m_Wrapper.m_InputMap_Enter;
+            public InputActionMap Get() { return m_Wrapper.m_InputMap; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
             public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(KeysActions set) { return set.Get(); }
-            public void SetCallbacks(IKeysActions instance)
+            public static implicit operator InputActionMap(InputMapActions set) { return set.Get(); }
+            public void SetCallbacks(IInputMapActions instance)
             {
-                if (m_Wrapper.m_KeysActionsCallbackInterface != null)
+                if (m_Wrapper.m_InputMapActionsCallbackInterface != null)
                 {
-                    @BasicMovement.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnBasicMovement;
-                    @BasicMovement.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnBasicMovement;
-                    @BasicMovement.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnBasicMovement;
-                    @Jump.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnJump;
-                    @Jump.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnJump;
-                    @Jump.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnJump;
-                    @Fall.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnFall;
-                    @Fall.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnFall;
-                    @Fall.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnFall;
-                    @Dash.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnDash;
-                    @Dash.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnDash;
-                    @Dash.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnDash;
-                    @Run.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
-                    @Run.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
-                    @Run.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnRun;
-                    @Climb.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
-                    @Climb.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
-                    @Climb.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnClimb;
-                    @Enter.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
-                    @Enter.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
-                    @Enter.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnEnter;
+                    @Basic.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnBasic;
+                    @Basic.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnBasic;
+                    @Basic.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnBasic;
+                    @Jump.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
+                    @Jump.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
+                    @Jump.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
+                    @Fall.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
+                    @Fall.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
+                    @Fall.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
+                    @Dash.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
+                    @Dash.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
+                    @Dash.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
+                    @Run.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnRun;
+                    @Run.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnRun;
+                    @Run.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnRun;
+                    @Climb.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnClimb;
+                    @Climb.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnClimb;
+                    @Climb.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnClimb;
+                    @Enter.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
+                    @Enter.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
+                    @Enter.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
                 }
-                m_Wrapper.m_KeysActionsCallbackInterface = instance;
+                m_Wrapper.m_InputMapActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @BasicMovement.started += instance.OnBasicMovement;
-                    @BasicMovement.performed += instance.OnBasicMovement;
-                    @BasicMovement.canceled += instance.OnBasicMovement;
+                    @Basic.started += instance.OnBasic;
+                    @Basic.performed += instance.OnBasic;
+                    @Basic.canceled += instance.OnBasic;
                     @Jump.started += instance.OnJump;
                     @Jump.performed += instance.OnJump;
                     @Jump.canceled += instance.OnJump;
@@ -489,53 +503,34 @@ namespace Plantack.Input
                 }
             }
         }
-        public KeysActions @Keys => new KeysActions(this);
-
-        // Mouse
-        private readonly InputActionMap m_Mouse;
-        private IMouseActions m_MouseActionsCallbackInterface;
-        private readonly InputAction m_Mouse_Newaction;
-        public struct MouseActions
+        public InputMapActions @InputMap => new InputMapActions(this);
+        private int m_GamepadSchemeIndex = -1;
+        public InputControlScheme GamepadScheme
         {
-            private @PlayerController m_Wrapper;
-            public MouseActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Newaction => m_Wrapper.m_Mouse_Newaction;
-            public InputActionMap Get() { return m_Wrapper.m_Mouse; }
-            public void Enable() { Get().Enable(); }
-            public void Disable() { Get().Disable(); }
-            public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(MouseActions set) { return set.Get(); }
-            public void SetCallbacks(IMouseActions instance)
+            get
             {
-                if (m_Wrapper.m_MouseActionsCallbackInterface != null)
-                {
-                    @Newaction.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnNewaction;
-                    @Newaction.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnNewaction;
-                    @Newaction.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnNewaction;
-                }
-                m_Wrapper.m_MouseActionsCallbackInterface = instance;
-                if (instance != null)
-                {
-                    @Newaction.started += instance.OnNewaction;
-                    @Newaction.performed += instance.OnNewaction;
-                    @Newaction.canceled += instance.OnNewaction;
-                }
+                if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+                return asset.controlSchemes[m_GamepadSchemeIndex];
             }
         }
-        public MouseActions @Mouse => new MouseActions(this);
-        public interface IKeysActions
+        private int m_KeyboardSchemeIndex = -1;
+        public InputControlScheme KeyboardScheme
         {
-            void OnBasicMovement(InputAction.CallbackContext context);
+            get
+            {
+                if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+                return asset.controlSchemes[m_KeyboardSchemeIndex];
+            }
+        }
+        public interface IInputMapActions
+        {
+            void OnBasic(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
             void OnFall(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
             void OnClimb(InputAction.CallbackContext context);
             void OnEnter(InputAction.CallbackContext context);
-        }
-        public interface IMouseActions
-        {
-            void OnNewaction(InputAction.CallbackContext context);
         }
     }
 }

@@ -2,11 +2,11 @@
     "name": "PlayerContorller",
     "maps": [
         {
-            "name": "Keys",
+            "name": "InputMap",
             "id": "e9be3853-4742-4e83-8924-2296ca85c2ab",
             "actions": [
                 {
-                    "name": "BasicMovement",
+                    "name": "Basic",
                     "type": "Value",
                     "id": "36a29f53-eb0c-4f47-a995-d128d88a74ed",
                     "expectedControlType": "Axis",
@@ -70,7 +70,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -81,7 +81,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -92,7 +92,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -103,7 +103,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -114,7 +114,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -125,7 +125,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -136,7 +136,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "BasicMovement",
+                    "action": "Basic",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -308,10 +308,10 @@
                 {
                     "name": "",
                     "id": "3487c78c-181d-44bb-b8e6-b856ca6baf7f",
-                    "path": "<Touchscreen>/press",
+                    "path": "<AndroidGamepad>/start",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Enter",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -322,7 +322,7 @@
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "Enter",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -335,33 +335,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Enter",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Mouse",
-            "id": "67d11f47-ffaf-44cc-9886-57525fdc8631",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "fb18fcae-acb9-46c5-af4f-0469980e7bff",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "c3eab96b-1585-42f8-8c12-afbeb1302c7d",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

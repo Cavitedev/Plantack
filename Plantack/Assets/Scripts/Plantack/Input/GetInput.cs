@@ -27,32 +27,31 @@ namespace Plantack.Input
         #region GetInput
         public float Basic
         {
-            get => Controller.Keys.BasicMovement.ReadValue<float>();
+            get => Controller.InputMap.Basic.ReadValue<float>();
         }
         public float Climb
         {
-            get => Controller.Keys.Climb.ReadValue<float>();
+            get => Controller.InputMap.Climb.ReadValue<float>();
         }
         public bool Jump
         {
-            get => Controller.Keys.Jump.triggered;
+            get => Controller.InputMap.Jump.triggered;
         }
         public bool Fall
         {
-            get => Controller.Keys.Fall.triggered;
+            get => Controller.InputMap.Fall.triggered;
         }
         public bool Dash
         {
-            get => Controller.Keys.Dash.triggered;
+            get => Controller.InputMap.Dash.triggered;
         }
         public bool Run
         {
-            get => Controller.Keys.Run.triggered;
-        }
-        
+            get => Controller.InputMap.Run.triggered;
+        }        
         public bool Enter
         {
-            get => Controller.Keys.Enter.triggered;
+            get => Controller.InputMap.Enter.triggered;
         }
         #endregion
     }
