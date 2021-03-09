@@ -7,10 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 886455337725655588, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d36b61094feb14a42b71b75be73f9ba6, type: 2}
     - target: {fileID: 8328982202365572249, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
       propertyPath: m_Name
       value: SilverCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 8328982202365572251, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7744652982397983095, guid: 43bd135ff12311546901f00f56f1bf80, type: 3}
     - target: {fileID: 8328982202365572252, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54,6 +62,10 @@ PrefabInstance:
     - target: {fileID: 8328982202365572252, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328982202365572253, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
+      propertyPath: value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
