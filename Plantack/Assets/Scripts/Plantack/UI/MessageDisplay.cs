@@ -16,6 +16,7 @@ namespace Plantack.UI
         [SerializeField] private Text textUi;
         [SerializeField] private float timeBetweenLetters = 0.1f;
         [SerializeField] private GetInput input;
+        [SerializeField] private GameObjectBlinking nextBlinking;
         
         
         private Queue<String> _currentMessages = new Queue<string>();
@@ -38,11 +39,13 @@ namespace Plantack.UI
         IEnumerator DisplayMessage(String message)
         {
             textUi.text = "";
+            nextBlinking.Hide();
             foreach (char c in message)
             {
                 textUi.text += c;
                 yield return new WaitForSeconds(timeBetweenLetters);
             }
+            nextBlinking.Show();
         }
 
 
