@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8328982202365572252}
   - component: {fileID: 8328982202365572251}
-  - component: {fileID: 8328982202365572250}
+  - component: {fileID: 886455337725655588}
   - component: {fileID: 8328982202365572254}
   - component: {fileID: 8328982202365572253}
   m_Layer: 0
-  m_Name: gold_coin
+  m_Name: GoldCoin
   m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3540036776471937163, guid: 53143fd765500954c8117af250f71377, type: 3}
+  m_Sprite: {fileID: -7744652982397983095, guid: 43bd135ff12311546901f00f56f1bf80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8328982202365572250
+--- !u!95 &886455337725655588
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 8328982202365572249}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa8b130f7c5d229429334b4c7e3fd821, type: 2}
+  m_Controller: {fileID: 9100000, guid: d36b61094feb14a42b71b75be73f9ba6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -132,4 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01751048bfc24ade8138174dd7e1f646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 5
