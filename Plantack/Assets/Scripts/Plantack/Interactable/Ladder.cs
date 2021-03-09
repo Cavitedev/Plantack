@@ -4,24 +4,21 @@ public class Ladder : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.transform.tag != "Player")
+        if (!collision.CompareTag("Player"))
             return;
-        else
-        {
-            var mover = collision.GetComponent<Plantack.Player.PlayerMover>();
-            if (!mover.ladder)
-                mover.ladder = true;
-            else return;
-        }
+
+
+        var mover = collision.GetComponent<Plantack.Player.PlayerMover>();
+        if (!mover.ladder)
+            mover.ladder = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.transform.tag != "Player")
+        if (!collision.CompareTag("Player"))
             return;
-        else
-        {
-            collision.GetComponent<Plantack.Player.PlayerMover>().ladder = false;
-        }
+
+
+        collision.GetComponent<Plantack.Player.PlayerMover>().ladder = false;
     }
 }
