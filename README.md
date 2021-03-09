@@ -21,3 +21,7 @@ The story is one of an awaken person that was frozen cryogenically and appears i
 
 <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
+## Sounds
+
+[Coin](https://freesound.org/people/cabled_mess/sounds/350869/)
+
