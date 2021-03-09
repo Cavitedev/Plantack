@@ -64,6 +64,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8328982202365572253, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
+      propertyPath: pitch
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328982202365572253, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
       propertyPath: value
       value: 5
       objectReference: {fileID: 0}
