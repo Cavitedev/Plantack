@@ -11,7 +11,7 @@ namespace Plantack.UI
 
         private void Start()
         {
-            playerStats.onCoinChange += onCoinChange;
+            playerStats.ONCoinChange += onCoinChange;
         }
 
         private void onCoinChange(int value)

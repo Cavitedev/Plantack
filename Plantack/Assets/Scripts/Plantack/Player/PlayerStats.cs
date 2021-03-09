@@ -16,11 +16,11 @@ namespace Plantack.Player
             set
             {
                 _coins = value;
-                onCoinChange(value);
+                ONCoinChange(value);
             }
         }
         public delegate void OnCoinChange(int newValue);
-        public OnCoinChange onCoinChange;
+        public OnCoinChange ONCoinChange;
         
         
         
@@ -52,17 +52,16 @@ namespace Plantack.Player
                 if (value <= 0)
                 {
                     health = 0;
-                    onHealthChange(health);
+                    ONHealthChange(health);
                     onDie?.Invoke();
                     return;
                 }
                 health = Math.Min(value, maxHealth);
-                heartsUI.UpdateHealth(health);
-                onHealthChange(health);
+                ONHealthChange(health);
             }
         }
         public delegate void OnHealthChange(float newValue);
-        public OnHealthChange onHealthChange;
+        public OnHealthChange ONHealthChange;
         
         public delegate void OnDie();
         public OnDie onDie;
@@ -70,14 +69,14 @@ namespace Plantack.Player
         
         private void OnValidate()
         {
-            onHealthChange = heartsUI.UpdateHealth;
+            ONHealthChange = heartsUI.UpdateHealth;
             MaxHealth = maxHealth;
             Health = health;
         }
         
         private void Start()
         {
-            onHealthChange += heartsUI.UpdateHealth;
+            ONHealthChange += heartsUI.UpdateHealth;
         }
         
     }
