@@ -8465,6 +8465,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
+  - first: {x: -4, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 838
+      m_TileSpriteIndex: 837
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 480
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -10143,6 +10153,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: d87e370efc6779d45ba7506cf6c2dcf6, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 89b3b507523fff745b076f9ac1476e16, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5889e5df9fd594446aaba6b9b5da9724, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -9030329824578680296, guid: e6fa4fb8801f92c44b7c75b2152715ab, type: 3}
@@ -11818,8 +11836,16 @@ Tilemap:
     m_Data: {fileID: -1872069584351363863, guid: e6fa4fb8801f92c44b7c75b2152715ab, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 8845766277452564394, guid: e6fa4fb8801f92c44b7c75b2152715ab, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 3540036776471937163, guid: 53143fd765500954c8117af250f71377, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 838
+  - m_RefCount: 839
     m_Data:
       e00: 1
       e01: 0
@@ -12852,7 +12878,7 @@ Tilemap:
     m_Data: {r: -3.687468e-17, g: -3.687468e-17, b: -3.687468e-17, a: -3.687468e-17}
   - m_RefCount: 0
     m_Data: {r: -3.687468e-17, g: -3.687468e-17, b: -3.687468e-17, a: -3.687468e-17}
-  - m_RefCount: 838
+  - m_RefCount: 839
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -12926,7 +12952,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &2945272030608430295
+--- !u!114 &4924600105704090305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

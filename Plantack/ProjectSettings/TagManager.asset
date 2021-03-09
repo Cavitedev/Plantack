@@ -47,11 +47,11 @@ TagManager:
   - name: Background
     uniqueID: 3839521357
     locked: 0
-  - name: Background Forward
-    uniqueID: 2567711643
-    locked: 0
   - name: Enviroment
     uniqueID: 2364768337
+    locked: 0
+  - name: Background Forward
+    uniqueID: 2567711643
     locked: 0
   - name: Enviroment Foreground
     uniqueID: 729312691
@@ -59,9 +59,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
-    uniqueID: 1763172223
-    locked: 0
   - name: Player
     uniqueID: 3862445671
+    locked: 0
+  - name: Interactables
+    uniqueID: 128429255
+    locked: 0
+  - name: Foreground
+    uniqueID: 1763172223
     locked: 0
