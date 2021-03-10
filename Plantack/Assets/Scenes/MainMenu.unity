@@ -28641,6 +28641,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1014053395, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 229318579910181112, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_Name
       value: MainMenu
