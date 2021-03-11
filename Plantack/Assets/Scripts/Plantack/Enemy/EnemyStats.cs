@@ -1,5 +1,4 @@
-﻿using System;
-using Plantack.Collectable;
+﻿using Plantack.Collectable;
 using Plantack.Player;
 using UnityEngine;
 
