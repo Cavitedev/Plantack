@@ -13,6 +13,7 @@ The story is one of an awaken person that was frozen cryogenically and appears i
 
 [Characters](https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/)
 
+[Bat Golem] (https://favpng.com/png_view/sprite-maplestory-golem-sprite-monster-puppet-png/uZWuzAfa)
 ### icons
 
 #### Next
