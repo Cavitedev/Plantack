@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: MM UI Table_es-MX
+  m_Name: MM UI Table_es
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es-MX
+    m_Code: es
   m_SharedData: {fileID: 11400000, guid: e1c199098b710a644b188defbbd72442, type: 2}
   m_Metadata:
     m_Items: []
@@ -27,11 +27,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2161013313536
-    m_Localized: SALIDA
+    m_Localized: SALIR
     m_Metadata:
       m_Items: []
   - m_Id: 4207514898432
-    m_Localized: ESPALDA
+    m_Localized: "ATR\xC1S"
     m_Metadata:
       m_Items: []
   references:

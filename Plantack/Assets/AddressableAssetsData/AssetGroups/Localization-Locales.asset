@@ -24,15 +24,15 @@ MonoBehaviour:
     - Locale
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 9fcca8b07912223498840d456688dfd8
-    m_Address: Spanish (Mexico) (es-MX)
+  - m_GUID: 62ccdfe25a4bb2a4e9811fd3fa8510b3
+    m_Address: English (en)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 62ccdfe25a4bb2a4e9811fd3fa8510b3
-    m_Address: English (en)
+  - m_GUID: 7beaf4721bcf6c54fa424e9b7b28a4c1
+    m_Address: Spanish (es)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

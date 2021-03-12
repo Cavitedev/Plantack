@@ -31,11 +31,11 @@ MonoBehaviour:
     - Locale-it
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: f5481704642965f4ba50a0b49ae80588
-    m_Address: MM UI Table_es-MX
+  - m_GUID: f9a2f4621bd14fa42bfc6da811dd57b2
+    m_Address: MM UI Table_es
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-es-MX
+    - Locale-es
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1

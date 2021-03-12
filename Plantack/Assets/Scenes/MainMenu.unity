@@ -28641,6 +28641,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 823796913, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1014053395, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -28648,6 +28652,10 @@ PrefabInstance:
     - target: {fileID: 229318579910181112, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 229318579910181112, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 229318579910181116, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_Pivot.x
@@ -28732,6 +28740,22 @@ PrefabInstance:
     - target: {fileID: 229318579910181116, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 229318579910181117, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 229318581521453757, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 229318581670307663, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 229318581760827256, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
