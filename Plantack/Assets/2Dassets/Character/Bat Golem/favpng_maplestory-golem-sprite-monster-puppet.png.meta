@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: f246fa4bbedf0e54f8969dfc76d9da48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5264949712274775018
+    second: favpng_maplestory-golem-sprite-monster-puppet_0
+  - first:
+      213: 4813080708806695947
+    second: favpng_maplestory-golem-sprite-monster-puppet_1
+  - first:
+      213: -4551331858652532976
+    second: favpng_maplestory-golem-sprite-monster-puppet_2
+  - first:
+      213: -1757083521074475291
+    second: favpng_maplestory-golem-sprite-monster-puppet_3
+  - first:
+      213: -1959652725919694190
+    second: favpng_maplestory-golem-sprite-monster-puppet_4
+  - first:
+      213: -1617533888118856051
+    second: favpng_maplestory-golem-sprite-monster-puppet_5
+  - first:
+      213: -7209022593759087333
+    second: favpng_maplestory-golem-sprite-monster-puppet_6
+  - first:
+      213: -4000980359772944920
+    second: favpng_maplestory-golem-sprite-monster-puppet_7
+  - first:
+      213: -6175490349009583031
+    second: favpng_maplestory-golem-sprite-monster-puppet_8
+  - first:
+      213: -356249243235934329
+    second: favpng_maplestory-golem-sprite-monster-puppet_9
+  - first:
+      213: 7313126772144014880
+    second: favpng_maplestory-golem-sprite-monster-puppet_10
+  - first:
+      213: -2610511396607320194
+    second: favpng_maplestory-golem-sprite-monster-puppet_11
+  - first:
+      213: 4007440001659339340
+    second: favpng_maplestory-golem-sprite-monster-puppet_12
+  - first:
+      213: -4205239116903219823
+    second: favpng_maplestory-golem-sprite-monster-puppet_19
+  - first:
+      213: 2957180212965489917
+    second: favpng_maplestory-golem-sprite-monster-puppet_27
+  - first:
+      213: 5096008492873304944
+    second: favpng_maplestory-golem-sprite-monster-puppet_28
+  - first:
+      213: -8882704968312033377
+    second: favpng_maplestory-golem-sprite-monster-puppet_29
+  - first:
+      213: -3074551845926171527
+    second: favpng_maplestory-golem-sprite-monster-puppet_30
+  - first:
+      213: -762095744515465883
+    second: favpng_maplestory-golem-sprite-monster-puppet_31
+  - first:
+      213: -482157994341407623
+    second: favpng_maplestory-golem-sprite-monster-puppet_32
+  - first:
+      213: -6027317953533997139
+    second: favpng_maplestory-golem-sprite-monster-puppet_33
+  - first:
+      213: -3662726689583042261
+    second: favpng_maplestory-golem-sprite-monster-puppet_34
+  - first:
+      213: 2552836900607454956
+    second: favpng_maplestory-golem-sprite-monster-puppet_35
+  - first:
+      213: -1006074391231447877
+    second: favpng_maplestory-golem-sprite-monster-puppet_36
+  - first:
+      213: 7282278564668499715
+    second: favpng_maplestory-golem-sprite-monster-puppet_37
+  - first:
+      213: -302824372329489269
+    second: favpng_maplestory-golem-sprite-monster-puppet_38
+  - first:
+      213: 1585819317183981390
+    second: favpng_maplestory-golem-sprite-monster-puppet_39
+  - first:
+      213: -8849598400184609105
+    second: favpng_maplestory-golem-sprite-monster-puppet_40
+  - first:
+      213: -5212899274257758626
+    second: favpng_maplestory-golem-sprite-monster-puppet_43
+  - first:
+      213: -2694158762679874415
+    second: favpng_maplestory-golem-sprite-monster-puppet_44
+  - first:
+      213: 297243593469384166
+    second: favpng_maplestory-golem-sprite-monster-puppet_45
+  - first:
+      213: 7908331641959512737
+    second: favpng_maplestory-golem-sprite-monster-puppet_48
+  - first:
+      213: 4284962471502898702
+    second: favpng_maplestory-golem-sprite-monster-puppet_49
+  - first:
+      213: 359538756982378669
+    second: favpng_maplestory-golem-sprite-monster-puppet_50
+  - first:
+      213: -6499031638526103908
+    second: favpng_maplestory-golem-sprite-monster-puppet_51
+  - first:
+      213: 5243004723458448429
+    second: favpng_maplestory-golem-sprite-monster-puppet_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 859
+        width: 117
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4890511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebde605edbd01940800000000000000
+      internalID: 5264949712274775018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 859
+        width: 117
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c55b3676f7bc240800000000000000
+      internalID: 4813080708806695947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 859
+        width: 117
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49264705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fe81ed9cb66d0c0800000000000000
+      internalID: -4551331858652532976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 859
+        width: 117
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51937985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eec9a5d8d59d97e0800000000000000
+      internalID: -1757083521074475291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_4
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 859
+        width: 117
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2924e6c7a3aedc4e0800000000000000
+      internalID: -1959652725919694190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_5
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 859
+        width: 117
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5114504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86e482bf7d5d89e0800000000000000
+      internalID: -1617533888118856051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 700
+        width: 117
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b157931652864fb90800000000000000
+      internalID: -7209022593759087333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 700
+        width: 117
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49618322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e54b669f89a978c0800000000000000
+      internalID: -4000980359772944920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 700
+        width: 117
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4814815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9444e692f304c4aa0800000000000000
+      internalID: -6175490349009583031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_9
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 700
+        width: 117
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5078125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f9b6563395e0bf0800000000000000
+      internalID: -356249243235934329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 700
+        width: 117
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5078125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0260b0b7d027d7560800000000000000
+      internalID: 7313126772144014880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 700
+        width: 117
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5371901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f9c1347b995cbd0800000000000000
+      internalID: -2610511396607320194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 531
+        width: 133
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42889df2794d9730800000000000000
+      internalID: 4007440001659339340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 570
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19df761bd4df3a5c0800000000000000
+      internalID: -4205239116903219823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 348
+        width: 147
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc3f926cb30a0920800000000000000
+      internalID: 2957180212965489917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_28
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 348
+        width: 147
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47810218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b461679b8a8b640800000000000000
+      internalID: 5096008492873304944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_29
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 348
+        width: 148
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4924812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fe927d4ea4ab480800000000000000
+      internalID: -8882704968312033377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_30
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 348
+        width: 154
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44256756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c8c04c26ff455d0800000000000000
+      internalID: -3074551845926171527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_31
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 348
+        width: 152
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48518518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d915745fd7c65f0800000000000000
+      internalID: -762095744515465883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_32
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 348
+        width: 151
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47810218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9746aa5dbd70f49f0800000000000000
+      internalID: -482157994341407623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_33
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 348
+        width: 145
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4924812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf854f514aaa5ca0800000000000000
+      internalID: -6027317953533997139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_34
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 348
+        width: 145
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4746377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217f065b716b2dc0800000000000000
+      internalID: -3662726689583042261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_35
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 348
+        width: 147
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4924812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee6736b2af7d6320800000000000000
+      internalID: 2552836900607454956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_36
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 348
+        width: 146
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4924812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc380deba4b902f0800000000000000
+      internalID: -1006074391231447877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_37
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 348
+        width: 119
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0.524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307e18a75c9df0560800000000000000
+      internalID: 7282278564668499715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_38
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 348
+        width: 119
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49621212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c58f976d62ccbf0800000000000000
+      internalID: -302824372329489269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_39
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 196
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4724b65446f10610800000000000000
+      internalID: 1585819317183981390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_40
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 196
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa691286429ef2580800000000000000
+      internalID: -8849598400184609105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_43
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 117
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5689fbaabf08a7b0800000000000000
+      internalID: -5212899274257758626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_44
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 12
+        width: 117
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cc5fd21ec6c9ad0800000000000000
+      internalID: -2694158762679874415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 12
+        width: 117
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5d0803975002400800000000000000
+      internalID: 297243593469384166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_48
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 12
+        width: 138
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa7afc6ab900cd60800000000000000
+      internalID: 7908331641959512737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_49
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 12
+        width: 147
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.92105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066fc54aae377b30800000000000000
+      internalID: 4284962471502898702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_50
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 32
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da09be438965df400800000000000000
+      internalID: 359538756982378669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_51
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 12
+        width: 148
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.92105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e60a9782dcec5a0800000000000000
+      internalID: -6499031638526103908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: favpng_maplestory-golem-sprite-monster-puppet_13
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 12
+        width: 130
+        height: 178
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39325842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c9f617405e2c840800000000000000
+      internalID: 5243004723458448429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
