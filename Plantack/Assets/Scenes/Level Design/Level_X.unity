@@ -29611,24 +29611,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
---- !u!1 &1030101117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8895939246222740956, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-  m_PrefabInstance: {fileID: 1550149226}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1030101118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030101117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcd5934af384e92ba91b9887f1f380c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!1001 &1057387597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49707,34 +49689,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1703363165491774429, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1703363165491774429, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: moveTime
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740928, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_Size.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740928, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_Size.y
-      value: 1.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740928, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740928, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740928, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8895939246222740929, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -49779,24 +49733,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740930, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740930, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740930, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8895939246222740956, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
       propertyPath: m_Name
       value: Brownfrog
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2950582500187410312, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
 --- !u!1001 &1588630710
 PrefabInstance:

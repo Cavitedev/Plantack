@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8895939246222740935}
   - component: {fileID: 8895939246222740928}
   - component: {fileID: 1703363165491774429}
-  - component: {fileID: 2950582500187410312}
+  - component: {fileID: 1030101118}
   m_Layer: 0
   m_Name: Brownfrog
   m_TagString: StatsCollider
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -8401322208605454878, guid: b191d492494c54e478c06e386b34ddef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,10 +137,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -151,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6875, y: 1.25}
+  m_Size: {x: 1.2, y: 1.05}
   m_EdgeRadius: 0
 --- !u!114 &1703363165491774429
 MonoBehaviour:
@@ -165,12 +165,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8529d9138cd12e34ab6cded5991c13e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 5
+  moveTime: 8
   waitTime: 10
   stopTime: 2
-  speed: 5
+  speed: 2
   moveLeftFirst: 1
---- !u!114 &2950582500187410312
+--- !u!114 &1030101118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8895939246222740956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f4b77a692124e3888ebdc2fd0331339, type: 3}
+  m_Script: {fileID: 11500000, guid: adcd5934af384e92ba91b9887f1f380c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
