@@ -26,7 +26,7 @@ namespace Plantack.Player
         
         
         
-        [SerializeField, Range(2,5)] private int maxHealth = 2;
+        [SerializeField, Range(1,5)] private int maxHealth = 2;
         [SerializeField] private HeartsUI heartsUI;
 
         private int _minHearts = 2;

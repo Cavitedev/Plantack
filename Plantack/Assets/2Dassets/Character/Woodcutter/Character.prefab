@@ -266,6 +266,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   ladder: 0
+  ClimbButton: {fileID: 0}
   InputX: 0
   InputY: 0
   Saxel: 0
