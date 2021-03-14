@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Plantack.Enemy
 {
     [RequireComponent(typeof(SimpleEnemyMovement))]
-    public class EnemyStats : MonoBehaviour, ICollectable
+    public class EnemyStats : MonoBehaviour, IStatsCollider
     {
 
         [SerializeField] private float damage;
@@ -17,7 +17,7 @@ namespace Plantack.Enemy
             _enemyMovement = GetComponent<SimpleEnemyMovement>();
         }
 
-        public void Collect(PlayerStats playerStats)
+        public void StatsCollide(PlayerStats playerStats)
         {
             _enemyMovement.Stop();
             playerStats.Health -= damage;

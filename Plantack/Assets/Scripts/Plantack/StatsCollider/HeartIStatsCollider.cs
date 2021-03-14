@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Plantack.Collectable
 {
-    public class HeartCollectable : MonoBehaviour, ICollectable
+    public class HeartIStatsCollider : MonoBehaviour, IStatsCollider
     {
         [SerializeField] private float value;
         
         
         
-        public void Collect(PlayerStats playerStats)
+        public void StatsCollide(PlayerStats playerStats)
         {
             playerStats.Health += value;
             Destroy(gameObject);
