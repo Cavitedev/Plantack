@@ -1,4 +1,3 @@
-using System.Collections;
 using Plantack.Input;
 using UnityEngine;
 namespace Plantack.Player
@@ -21,6 +20,7 @@ namespace Plantack.Player
         #endregion
         #region Interactable
         public bool ladder;
+        public GameObject ClimbButton;
         #endregion
         [SerializeField]
         private float InputX, InputY, Saxel, maxSpeed, moveSpeed, speedError, Gaxel, FallForce, gravity;
@@ -83,7 +83,7 @@ namespace Plantack.Player
         {
             InputX = 0f;
             InputY = 0f;
-
+            
             if (input.Run)
                 running = !running;
             if (!climbing)
@@ -150,10 +150,14 @@ namespace Plantack.Player
         #region Vertical
         private void Climb()
         {
-            if (ladder && !climbing && Mathf.Abs(input.Climb) > 0)
+            if (ladder && !climbing && input.EnableClimb)
                 climbing = true;
-            else if (climbing && (!ladder || input.Jump))
+            else if (climbing && (!ladder || input.EnableClimb))
                 climbing = false;
+        }
+        public void Ladder()
+        {
+            ladder = !ladder;
         }
         private void Jump()
         {
@@ -162,9 +166,27 @@ namespace Plantack.Player
                 FallForce = Character.JumpForce;
                 anim.SetTrigger("Jump");
             }
-        }        
+        }
         #endregion
 
+        #region Ladder
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                ladder = true;
+                ClimbButton.SetActive(true);
+            }
+        }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                ladder = false;
+                ClimbButton.SetActive(false);
+            }
+        }
+        #endregion
         #region Animate
         void Animate()
         {

@@ -37,9 +37,9 @@ namespace Plantack.Input
         {
             get => Controller.InputMap.Jump.triggered;
         }
-        public bool Fall
+        public bool EnableClimb
         {
-            get => Controller.InputMap.Fall.triggered;
+            get => Controller.InputMap.EnableClimb.triggered;
         }
         public bool Dash
         {

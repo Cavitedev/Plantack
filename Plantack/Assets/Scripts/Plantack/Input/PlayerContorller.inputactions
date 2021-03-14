@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Fall",
+                    "name": "EnableClimb",
                     "type": "Button",
                     "id": "6e7c9038-b940-43f2-add4-5dcafa8de924",
                     "expectedControlType": "Button",
@@ -165,33 +165,22 @@
                 {
                     "name": "",
                     "id": "5da60dd8-3e37-430a-81e3-6deeaad9f28b",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Fall",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d5b861f0-bc80-4b34-9750-d3e070075cd2",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Fall",
+                    "action": "EnableClimb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "8fe2508f-e946-40d7-a4f0-4a77faf6f7e2",
-                    "path": "<AndroidGamepad>/dpad/down",
+                    "path": "<AndroidGamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Fall",
+                    "action": "EnableClimb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

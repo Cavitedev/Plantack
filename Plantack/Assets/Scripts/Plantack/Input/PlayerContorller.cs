@@ -37,7 +37,7 @@ namespace Plantack.Input
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Fall"",
+                    ""name"": ""EnableClimb"",
                     ""type"": ""Button"",
                     ""id"": ""6e7c9038-b940-43f2-add4-5dcafa8de924"",
                     ""expectedControlType"": ""Button"",
@@ -180,33 +180,22 @@ namespace Plantack.Input
                 {
                     ""name"": """",
                     ""id"": ""5da60dd8-3e37-430a-81e3-6deeaad9f28b"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Fall"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d5b861f0-bc80-4b34-9750-d3e070075cd2"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Fall"",
+                    ""action"": ""EnableClimb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""8fe2508f-e946-40d7-a4f0-4a77faf6f7e2"",
-                    ""path"": ""<AndroidGamepad>/dpad/down"",
+                    ""path"": ""<AndroidGamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Fall"",
+                    ""action"": ""EnableClimb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -879,7 +868,7 @@ namespace Plantack.Input
             m_InputMap = asset.FindActionMap("InputMap", throwIfNotFound: true);
             m_InputMap_Basic = m_InputMap.FindAction("Basic", throwIfNotFound: true);
             m_InputMap_Jump = m_InputMap.FindAction("Jump", throwIfNotFound: true);
-            m_InputMap_Fall = m_InputMap.FindAction("Fall", throwIfNotFound: true);
+            m_InputMap_EnableClimb = m_InputMap.FindAction("EnableClimb", throwIfNotFound: true);
             m_InputMap_Dash = m_InputMap.FindAction("Dash", throwIfNotFound: true);
             m_InputMap_Run = m_InputMap.FindAction("Run", throwIfNotFound: true);
             m_InputMap_Climb = m_InputMap.FindAction("Climb", throwIfNotFound: true);
@@ -947,7 +936,7 @@ namespace Plantack.Input
         private IInputMapActions m_InputMapActionsCallbackInterface;
         private readonly InputAction m_InputMap_Basic;
         private readonly InputAction m_InputMap_Jump;
-        private readonly InputAction m_InputMap_Fall;
+        private readonly InputAction m_InputMap_EnableClimb;
         private readonly InputAction m_InputMap_Dash;
         private readonly InputAction m_InputMap_Run;
         private readonly InputAction m_InputMap_Climb;
@@ -958,7 +947,7 @@ namespace Plantack.Input
             public InputMapActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
             public InputAction @Basic => m_Wrapper.m_InputMap_Basic;
             public InputAction @Jump => m_Wrapper.m_InputMap_Jump;
-            public InputAction @Fall => m_Wrapper.m_InputMap_Fall;
+            public InputAction @EnableClimb => m_Wrapper.m_InputMap_EnableClimb;
             public InputAction @Dash => m_Wrapper.m_InputMap_Dash;
             public InputAction @Run => m_Wrapper.m_InputMap_Run;
             public InputAction @Climb => m_Wrapper.m_InputMap_Climb;
@@ -978,9 +967,9 @@ namespace Plantack.Input
                     @Jump.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
                     @Jump.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
                     @Jump.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnJump;
-                    @Fall.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
-                    @Fall.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
-                    @Fall.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnFall;
+                    @EnableClimb.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnableClimb;
+                    @EnableClimb.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnableClimb;
+                    @EnableClimb.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnableClimb;
                     @Dash.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
                     @Dash.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
                     @Dash.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnDash;
@@ -1003,9 +992,9 @@ namespace Plantack.Input
                     @Jump.started += instance.OnJump;
                     @Jump.performed += instance.OnJump;
                     @Jump.canceled += instance.OnJump;
-                    @Fall.started += instance.OnFall;
-                    @Fall.performed += instance.OnFall;
-                    @Fall.canceled += instance.OnFall;
+                    @EnableClimb.started += instance.OnEnableClimb;
+                    @EnableClimb.performed += instance.OnEnableClimb;
+                    @EnableClimb.canceled += instance.OnEnableClimb;
                     @Dash.started += instance.OnDash;
                     @Dash.performed += instance.OnDash;
                     @Dash.canceled += instance.OnDash;
@@ -1149,7 +1138,7 @@ namespace Plantack.Input
         {
             void OnBasic(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
-            void OnFall(InputAction.CallbackContext context);
+            void OnEnableClimb(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
             void OnClimb(InputAction.CallbackContext context);
