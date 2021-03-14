@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 namespace Plantack.Collectable
 {
     [RequireComponent(typeof(Collider2D))]
-    public class CoinIcollectable : MonoBehaviour, ICollectable
+    public class CoinIStatsCollider : MonoBehaviour, IStatsCollider
     {
         [SerializeField] private int value = 1;
         [SerializeField] private AudioClip sound;
@@ -15,7 +15,7 @@ namespace Plantack.Collectable
         [SerializeField] private float randomPitchAdd = 0.01f;
         
 
-        public void Collect(PlayerStats playerStats)
+        public void StatsCollide(PlayerStats playerStats)
         {
             playerStats.Coins += value;
             float currentPitch = pitch + Random.Range(-1, 1) * randomPitchAdd;

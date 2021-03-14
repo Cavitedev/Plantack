@@ -8,17 +8,20 @@ namespace Plantack.Management
     {
         [SerializeField] private int startAmountSounds;
         [SerializeField] private GameObject audioGameObject;
-        
+
         public static AudioManager instance;
         private List<AudioSource> _audioSourcesPool = new List<AudioSource>();
-        
-        
+
+
         private void Awake()
         {
-            if(instance != null)
+            if (instance != null)
                 Destroy(gameObject);
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            if (transform.parent == null)
+            {
+                DontDestroyOnLoad(gameObject);
+            }
         }
 
         private void Start()
@@ -28,7 +31,6 @@ namespace Plantack.Management
                 InstantiateAudioSource(i);
             }
         }
-
 
 
         public void PlaySound(AudioClip clip, Vector3 pos, float pitch = 1.0f, bool loop = false)
@@ -49,7 +51,7 @@ namespace Plantack.Management
             _audioSourcesPool.Add(audioSource);
             return audioSource;
         }
-        
+
         private AudioSource FirstAvailableAudioSource()
         {
             foreach (AudioSource audioSource in _audioSourcesPool)
@@ -62,8 +64,5 @@ namespace Plantack.Management
 
             return InstantiateAudioSource(_audioSourcesPool.Count);
         }
-        
-        
-        
     }
 }
