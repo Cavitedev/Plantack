@@ -155,10 +155,6 @@ namespace Plantack.Player
             else if (climbing && (!ladder || input.EnableClimb))
                 climbing = false;
         }
-        public void Ladder()
-        {
-            ladder = !ladder;
-        }
         private void Jump()
         {
             if(!climbing && onGround && input.Jump)

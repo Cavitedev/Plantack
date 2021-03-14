@@ -16,9 +16,9 @@ TagManager:
   - UI
   - Enviroment
   - Ground
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - NPC
   - 
   - 
   - 
