@@ -5,21 +5,15 @@ using UnityEngine;
 namespace Plantack.Enemy
 {
     [RequireComponent(typeof(SimpleEnemyMovement))]
-    public class EnemyStats : MonoBehaviour, IStatsCollider
+    public abstract class DamageObject : MonoBehaviour, IStatsCollider
     {
 
-        [SerializeField] private float damage;
+        [SerializeField] private float damage = 1;
 
-        private SimpleEnemyMovement _enemyMovement;
 
-        private void Start()
+
+        public virtual void StatsCollide(PlayerStats playerStats)
         {
-            _enemyMovement = GetComponent<SimpleEnemyMovement>();
-        }
-
-        public void StatsCollide(PlayerStats playerStats)
-        {
-            _enemyMovement.Stop();
             playerStats.Health -= damage;
         }
     }
