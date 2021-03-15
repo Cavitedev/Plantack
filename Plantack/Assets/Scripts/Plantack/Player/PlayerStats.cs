@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Plantack.UI;
 using UnityEngine;
 
@@ -44,24 +45,46 @@ namespace Plantack.Player
         
         
         [SerializeField, Range(0,5)] private float health;
+        [SerializeField] private float _invulnerableTime = 1;
+        private bool _invulnerable = false;
+        
         public float Health
         {
             get => health;
             set
             {
+                if (_invulnerable) return;
+                
+                if (value < health)
+                {
+                    onDamage?.Invoke();
+                    _invulnerable = true;
+                    StartCoroutine(ResetVulnerability());
+                }
+                
                 if (value <= 0)
                 {
                     health = 0;
-                    ONHealthChange(health);
+                    onHealthChange(health);
                     onDie?.Invoke();
                     return;
                 }
                 health = Math.Min(value, maxHealth);
-                ONHealthChange(health);
+                onHealthChange(health);
             }
         }
+
+        private IEnumerator ResetVulnerability()
+        {
+            yield return new WaitForSeconds(_invulnerableTime);
+            _invulnerable = false;
+        }
+        
         public delegate void OnHealthChange(float newValue);
-        public OnHealthChange ONHealthChange;
+        public OnHealthChange onHealthChange;
+        
+        public delegate void OnDamage();
+        public OnDamage onDamage;
         
         public delegate void OnDie();
         public OnDie onDie;
@@ -69,14 +92,14 @@ namespace Plantack.Player
         
         private void OnValidate()
         {
-            ONHealthChange = heartsUI.UpdateHealth;
+            onHealthChange = heartsUI.UpdateHealth;
             MaxHealth = maxHealth;
             Health = health;
         }
         
         private void Start()
         {
-            ONHealthChange += heartsUI.UpdateHealth;
+            onHealthChange += heartsUI.UpdateHealth;
         }
         
     }

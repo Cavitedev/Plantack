@@ -2,7 +2,7 @@ using Plantack.Input;
 using UnityEngine;
 namespace Plantack.Player
 {
-    [RequireComponent(typeof(GetInput), typeof(Rigidbody2D))]
+    [RequireComponent(typeof(GetInput), typeof(Rigidbody2D), typeof(PlayerStats))]
     public class PlayerMover : MonoBehaviour
     {
         #region Components
@@ -10,6 +10,7 @@ namespace Plantack.Player
         Rigidbody2D rb;
         GetInput input;
         PlayerVariables Character;
+        PlayerStats _playerStats;
         #endregion
 
         #region Variables
@@ -40,6 +41,8 @@ namespace Plantack.Player
             rb = GetComponent<Rigidbody2D>();
             input = GetComponent<GetInput>();
             Character = new PlayerVariables();
+            _playerStats = GetComponent<PlayerStats>();
+            _playerStats.onDamage += OnDamage;
             #endregion
             #region Define Variables
             Saxel = Character.SpeedAcceleration;
@@ -193,5 +196,11 @@ namespace Plantack.Player
                 anim.SetFloat("Climb", InputY);
         }
         #endregion
+
+        private void OnDamage()
+        {
+            anim.SetTrigger("Damage");
+            //TODO move the player back a little bit and disable input for specific amount of time
+        }
     }
 }
