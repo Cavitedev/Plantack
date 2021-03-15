@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Plantack.Enemy
 {
     [RequireComponent(typeof(LeftRightMovement))]
-    public class EnemyDamage : DamageObject
+    public class LeftRightEnemyDamage : DamageObject
     {
         private LeftRightMovement _enemyMovement;
 
