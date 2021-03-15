@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     bool reloading;
     int ammo;
     int maxAmmo = 10;
-    List<GameObject> bullets;
+    List<GameObject> bullets = new List<GameObject>();
 
     public GameObject bulletPrefab;
     public Transform shootPoint;
