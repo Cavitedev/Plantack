@@ -1,14 +1,17 @@
-﻿using Plantack.Player;
+﻿using Plantack.Enemy.AI.LeftRightMovement;
+using Plantack.Player;
+using UnityEngine;
 
 namespace Plantack.Enemy
 {
+    [RequireComponent(typeof(LeftRightMovement))]
     public class EnemyDamage : DamageObject
     {
-        private SimpleEnemyMovement _enemyMovement;
+        private LeftRightMovement _enemyMovement;
 
         private void Start()
         {
-            _enemyMovement = GetComponent<SimpleEnemyMovement>();
+            _enemyMovement = GetComponent<LeftRightMovement>();
         }
 
         public override void StatsCollide(PlayerStats playerStats)

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Plantack.Enemy
 {
-    [RequireComponent(typeof(SimpleEnemyMovement))]
+    
     public abstract class DamageObject : MonoBehaviour, IStatsCollider
     {
 
