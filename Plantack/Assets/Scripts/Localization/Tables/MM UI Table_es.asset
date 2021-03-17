@@ -34,5 +34,10 @@ MonoBehaviour:
     m_Localized: "ATR\xC1S"
     m_Metadata:
       m_Items: []
+  - m_Id: 2428375077605376
+    m_Localized: "Te has levantado despu\xE9s de a\xF1os durmiendo. \xBFSabes d\xF3nde
+      est\xE1s?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

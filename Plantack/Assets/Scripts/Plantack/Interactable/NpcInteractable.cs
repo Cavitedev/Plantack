@@ -1,16 +1,23 @@
-﻿using Plantack.UI;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Plantack.UI;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.Localization;
+using UnityEngine.ResourceManagement;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Plantack.Interactable
 {
     public class NpcInteractable : MonoBehaviour, IInteractable
     {
-        
         [SerializeField] private MessageDisplay messageDisplay;
-        [SerializeField,TextArea] private string[] messages;
-        
-        
-        
+        public LocalizedString[] localizedMessages;
+        private string[] _messages;
+
+
         public IInteractable.Interact GetInteractDelegate()
         {
             return Interact;
@@ -18,7 +25,32 @@ namespace Plantack.Interactable
 
         private void Interact()
         {
-            messageDisplay.ShowMessages(messages);
+            StartCoroutine(InteractCoroutine());
+        }
+
+        private IEnumerator InteractCoroutine()
+        {
+            AsyncOperationHandle<string>[] asyncMessages =
+                localizedMessages.Select(s => s.GetLocalizedString()).ToArray();
+            _messages = new string[asyncMessages.Length];
+
+            ResourceManager _resourceManager = Addressables.ResourceManager;
+
+            for (var i = 0; i < asyncMessages.Length; i++)
+            {
+                AsyncOperationHandle<string> asyncOperationHandle = asyncMessages[i];
+                _resourceManager.Acquire(asyncOperationHandle);
+                if (!asyncOperationHandle.IsDone)
+                {
+                    yield return asyncOperationHandle;
+                }
+
+                _messages[i] = asyncOperationHandle.Result;
+                _resourceManager.Release(asyncOperationHandle);
+            }
+
+
+            messageDisplay.ShowMessages(_messages);
         }
     }
 }

@@ -30,8 +30,8 @@ namespace Plantack.Player
         [SerializeField, Range(1,5)] private int maxHealth = 2;
         [SerializeField] private HeartsUI heartsUI;
 
-        private int _minHearts = 2;
-        private int _maxHearts = 5;
+        private const int _minHearts = 1;
+        private const int _maxHearts = 5;
         
         public int MaxHealth
         {
@@ -65,12 +65,12 @@ namespace Plantack.Player
                 if (value <= 0)
                 {
                     health = 0;
-                    onHealthChange(health);
+                    onHealthChange?.Invoke(health);
                     onDie?.Invoke();
                     return;
                 }
                 health = Math.Min(value, maxHealth);
-                onHealthChange(health);
+                onHealthChange?.Invoke(health);
             }
         }
 
@@ -92,7 +92,7 @@ namespace Plantack.Player
         
         private void OnValidate()
         {
-            onHealthChange = heartsUI.UpdateHealth;
+            onHealthChange = (f) => heartsUI.UpdateHealth(f);
             MaxHealth = maxHealth;
             Health = health;
         }

@@ -34,5 +34,9 @@ MonoBehaviour:
     m_Localized: INDIETRO
     m_Metadata:
       m_Items: []
+  - m_Id: 2428375077605376
+    m_Localized: WAKE UP... TODO
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

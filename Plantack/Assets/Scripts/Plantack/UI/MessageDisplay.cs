@@ -40,6 +40,8 @@ namespace Plantack.UI
         {
             textUi.text = "";
             nextBlinking.Hide();
+            if(message == null)
+                yield break;
             foreach (char c in message)
             {
                 textUi.text += c;
