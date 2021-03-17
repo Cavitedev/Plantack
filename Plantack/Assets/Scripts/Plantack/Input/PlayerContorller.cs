@@ -75,6 +75,14 @@ namespace Plantack.Input
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""9f862d46-3e35-4400-b7b6-b5f4bc81c911"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -339,6 +347,50 @@ namespace Plantack.Input
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73ee74b6-93d4-4922-8685-3db5b52549b7"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""83f28b6c-39fe-413e-a473-f3dfa6e051c7"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b3646d8-30e8-4e5c-a1d0-e4d0139a9cf7"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef3bb6b1-66ad-4f76-8f2d-d65591720b57"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -873,6 +925,7 @@ namespace Plantack.Input
             m_InputMap_Run = m_InputMap.FindAction("Run", throwIfNotFound: true);
             m_InputMap_Climb = m_InputMap.FindAction("Climb", throwIfNotFound: true);
             m_InputMap_Enter = m_InputMap.FindAction("Enter", throwIfNotFound: true);
+            m_InputMap_Quit = m_InputMap.FindAction("Quit", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -941,6 +994,7 @@ namespace Plantack.Input
         private readonly InputAction m_InputMap_Run;
         private readonly InputAction m_InputMap_Climb;
         private readonly InputAction m_InputMap_Enter;
+        private readonly InputAction m_InputMap_Quit;
         public struct InputMapActions
         {
             private @PlayerController m_Wrapper;
@@ -952,6 +1006,7 @@ namespace Plantack.Input
             public InputAction @Run => m_Wrapper.m_InputMap_Run;
             public InputAction @Climb => m_Wrapper.m_InputMap_Climb;
             public InputAction @Enter => m_Wrapper.m_InputMap_Enter;
+            public InputAction @Quit => m_Wrapper.m_InputMap_Quit;
             public InputActionMap Get() { return m_Wrapper.m_InputMap; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -982,6 +1037,9 @@ namespace Plantack.Input
                     @Enter.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
                     @Enter.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
                     @Enter.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnEnter;
+                    @Quit.started -= m_Wrapper.m_InputMapActionsCallbackInterface.OnQuit;
+                    @Quit.performed -= m_Wrapper.m_InputMapActionsCallbackInterface.OnQuit;
+                    @Quit.canceled -= m_Wrapper.m_InputMapActionsCallbackInterface.OnQuit;
                 }
                 m_Wrapper.m_InputMapActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1007,6 +1065,9 @@ namespace Plantack.Input
                     @Enter.started += instance.OnEnter;
                     @Enter.performed += instance.OnEnter;
                     @Enter.canceled += instance.OnEnter;
+                    @Quit.started += instance.OnQuit;
+                    @Quit.performed += instance.OnQuit;
+                    @Quit.canceled += instance.OnQuit;
                 }
             }
         }
@@ -1143,6 +1204,7 @@ namespace Plantack.Input
             void OnRun(InputAction.CallbackContext context);
             void OnClimb(InputAction.CallbackContext context);
             void OnEnter(InputAction.CallbackContext context);
+            void OnQuit(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {
