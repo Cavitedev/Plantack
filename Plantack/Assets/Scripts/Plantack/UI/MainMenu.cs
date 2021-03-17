@@ -3,13 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject pickPlayers;
+    [SerializeField] private GameObject options;
     
     
     public void PlayGame()
     {
-        Debug.Log("PLAY");
-        SceneManager.LoadScene("Level_0");
+        mainMenu.SetActive(false);
+        pickPlayers.SetActive(true);
     }
 
     public void QuitGame()
@@ -17,4 +20,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
+    public void Back()
+    {
+        mainMenu.SetActive(true);
+        pickPlayers.SetActive(false);
+        options.SetActive(false);
+    }
+    
 }

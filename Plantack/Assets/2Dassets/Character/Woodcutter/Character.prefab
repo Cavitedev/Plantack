@@ -293,7 +293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6658bc4a4345d59c6402b32ba784b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerUI: {fileID: 11400000, guid: 3f7a40edb0dfede4ab30573eeaef7fd7, type: 2}
+  playersUI:
+  - {fileID: 11400000, guid: d0deec59f6a62bd4aa485af8276b49b2, type: 2}
+  - {fileID: 11400000, guid: 3f7a40edb0dfede4ab30573eeaef7fd7, type: 2}
   animator: {fileID: 634757400}
   playerRenderer: {fileID: 4968306811352317467}
   jumpButton: {fileID: 0}
