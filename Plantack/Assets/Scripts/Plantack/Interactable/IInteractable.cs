@@ -6,6 +6,7 @@
 
         public Interact GetInteractDelegate();
 
-        
+        public void Exit();
+
     }
 }

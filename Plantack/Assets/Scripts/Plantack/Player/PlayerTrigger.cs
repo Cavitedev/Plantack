@@ -33,6 +33,14 @@ namespace Plantack.Player
                 interactable.GetInteractDelegate().Invoke();
             }
         }
-        
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag(_interactableTag))
+            {
+                IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
+                interactable.Exit();
+            }
+        }
     }
 }

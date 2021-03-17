@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using Plantack.UI;
 using UnityEngine;
@@ -23,6 +22,11 @@ namespace Plantack.Interactable
             return Interact;
         }
 
+        public void Exit()
+        {
+            messageDisplay.Hide();
+        }
+
         private void Interact()
         {
             StartCoroutine(InteractCoroutine());
@@ -34,19 +38,26 @@ namespace Plantack.Interactable
                 localizedMessages.Select(s => s.GetLocalizedString()).ToArray();
             _messages = new string[asyncMessages.Length];
 
-
+            ResourceManager resourceManager = Addressables.ResourceManager;
             for (var i = 0; i < asyncMessages.Length; i++)
             {
                 AsyncOperationHandle<string> asyncOperationHandle = asyncMessages[i];
+                resourceManager.Acquire(asyncOperationHandle);
                 if (!asyncOperationHandle.IsDone)
                 {
                     yield return asyncOperationHandle;
                 }
-
                 _messages[i] = asyncOperationHandle.Result;
+                resourceManager.Release(asyncOperationHandle);
+              
             }
-
+            resourceManager.Dispose();
             messageDisplay.ShowMessages(_messages);
+        }
+
+        private void OnDestroy()
+        {
+            Addressables.ResourceManager.Dispose();
         }
     }
 }

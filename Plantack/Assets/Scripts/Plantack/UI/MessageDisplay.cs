@@ -7,23 +7,22 @@ using UnityEngine.UI;
 
 namespace Plantack.UI
 {
-    
-    
     public class MessageDisplay : MonoBehaviour
     {
         [SerializeField] private GameObject textGO;
-        
+
         [SerializeField] private Text textUi;
         [SerializeField] private float timeBetweenLetters = 0.1f;
         [SerializeField] private GetInput input;
         [SerializeField] private GameObjectBlinking nextBlinking;
-        
-        
+
+
         private Queue<String> _currentMessages = new Queue<string>();
-        
+        private String _messageBeingDisplayed;
+        private bool _isDisplayingMessage;
+
         public void ShowMessages(String[] messages)
         {
-            
             StopAllCoroutines();
 
             _currentMessages.Clear();
@@ -36,17 +35,33 @@ namespace Plantack.UI
             textGO.SetActive(true);
         }
 
-        IEnumerator DisplayMessage(String message)
+        public void Hide()
         {
+            StopAllCoroutines();
             textUi.text = "";
             nextBlinking.Hide();
-            if(message == null)
+            textGO.SetActive(false);
+        }
+
+        IEnumerator DisplayMessage(String message)
+        {
+            if (message == null)
+            {
+                Hide();
                 yield break;
+            }
+            _messageBeingDisplayed = message;
+            textUi.text = "";
+            nextBlinking.Hide();
+
+            _isDisplayingMessage = true;
             foreach (char c in message)
             {
                 textUi.text += c;
                 yield return new WaitForSeconds(timeBetweenLetters);
             }
+
+            _isDisplayingMessage = false;
             nextBlinking.Show();
         }
 
@@ -55,7 +70,15 @@ namespace Plantack.UI
         {
             if (input.Enter)
             {
-                if (HasMoreMessages)
+                if (_isDisplayingMessage)
+                {
+                    StopAllCoroutines();
+                    textUi.text = _messageBeingDisplayed;
+                    _isDisplayingMessage = false;
+                    nextBlinking.Show();
+                    
+                }
+                else if (HasMoreMessages)
                 {
                     StopAllCoroutines();
 
@@ -63,7 +86,7 @@ namespace Plantack.UI
                 }
                 else
                 {
-                    textGO.SetActive(false);
+                    Hide();
                 }
             }
         }

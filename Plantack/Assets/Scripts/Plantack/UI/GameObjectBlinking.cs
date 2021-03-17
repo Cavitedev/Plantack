@@ -8,7 +8,6 @@ public class GameObjectBlinking : MonoBehaviour
 
     [SerializeField] private float timeBlink = 0.5f;
 
-
     public void Hide()
     {
         StopBlinking();
@@ -23,6 +22,8 @@ public class GameObjectBlinking : MonoBehaviour
         StartCoroutine(BlinkObject());
     }
 
+
+    
     IEnumerator BlinkObject()
     {
         while (true)
