@@ -23034,22 +23034,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2555858607825207071, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 810
-      objectReference: {fileID: 0}
-    - target: {fileID: 2555858607825207071, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 260
-      objectReference: {fileID: 0}
-    - target: {fileID: 2555858607825207071, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2555858607825207071, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3140836099638373305, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -23134,6 +23118,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8485212937240030632, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8485212937259917625, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -23142,6 +23130,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9098631263962001125, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
+      propertyPath: playersUI.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098631263962001125, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
+      propertyPath: playersUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d0deec59f6a62bd4aa485af8276b49b2, type: 2}
+    - target: {fileID: 9098631263962001125, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
+      propertyPath: playersUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f7a40edb0dfede4ab30573eeaef7fd7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c8d6a15e3ba534ea735ef60a687710, type: 3}
 --- !u!114 &874108338 stripped

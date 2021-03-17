@@ -74,25 +74,6 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
---- !u!95 &8485212937752223382
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3545301083773423433}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1651388768100639532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,11 +642,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2906ff12da5343f4c894ab62df90c0ac, type: 3}
---- !u!224 &8177672141358191124 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8426426262800031536, guid: 2906ff12da5343f4c894ab62df90c0ac, type: 3}
-  m_PrefabInstance: {fileID: 399768642011827492}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8177672141358191125 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8426426262800031537, guid: 2906ff12da5343f4c894ab62df90c0ac, type: 3}
@@ -677,6 +653,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f44c254dc7effc4482c2a54970a4932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8177672141358191124 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8426426262800031536, guid: 2906ff12da5343f4c894ab62df90c0ac, type: 3}
+  m_PrefabInstance: {fileID: 399768642011827492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3352132114960229459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,6 +1219,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4628541757519387049, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
   m_PrefabInstance: {fileID: 3889537781485828243}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8485212937190720802 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4628541757588585905, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
+  m_PrefabInstance: {fileID: 3889537781485828243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8485212936696780177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4628541758151601410, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
+  m_PrefabInstance: {fileID: 3889537781485828243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8485212936615998037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4628541758230743750, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
+  m_PrefabInstance: {fileID: 3889537781485828243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7481349809018881037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5920388539193605278, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
+  m_PrefabInstance: {fileID: 3889537781485828243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3498241434972915233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 393548256454475442, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
@@ -1324,6 +1349,22 @@ PrefabInstance:
       propertyPath: ClimbButton
       value: 
       objectReference: {fileID: 3498241434972915233}
+    - target: {fileID: 830171789334650387, guid: f03714edb2e4b5b47898318a1a213c05, type: 3}
+      propertyPath: runButton
+      value: 
+      objectReference: {fileID: 8485212936696780177}
+    - target: {fileID: 830171789334650387, guid: f03714edb2e4b5b47898318a1a213c05, type: 3}
+      propertyPath: jumpButton
+      value: 
+      objectReference: {fileID: 8485212937190720802}
+    - target: {fileID: 830171789334650387, guid: f03714edb2e4b5b47898318a1a213c05, type: 3}
+      propertyPath: climbButton
+      value: 
+      objectReference: {fileID: 7481349809018881037}
+    - target: {fileID: 830171789334650387, guid: f03714edb2e4b5b47898318a1a213c05, type: 3}
+      propertyPath: attackButton
+      value: 
+      objectReference: {fileID: 8485212936615998037}
     - target: {fileID: 2551892919387116122, guid: f03714edb2e4b5b47898318a1a213c05, type: 3}
       propertyPath: m_Simulated
       value: 1

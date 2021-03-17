@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: cac62559736fac5429970694111b3b6d
+guid: fc3d579ad1cbccd4d921b492fc729197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2050515115836288021
-    second: SteamMan_climb_0
+      213: -7729105491243978623
+    second: SteamMan_run_0
   - first:
-      213: -6377258595460854562
-    second: SteamMan_climb_1
+      213: -5324354391246644213
+    second: SteamMan_run_1
   - first:
-      213: -1025059064577030151
-    second: SteamMan_climb_2
+      213: 4779663516953972575
+    second: SteamMan_run_2
   - first:
-      213: 4251321664545630239
-    second: SteamMan_climb_3
+      213: 5136082909016690785
+    second: SteamMan_run_3
   - first:
-      213: 2802937388376197118
-    second: SteamMan_climb_4
+      213: 1553644587458834420
+    second: SteamMan_run_4
   - first:
-      213: -1932113948721171340
-    second: SteamMan_climb_5
+      213: 2765629330799976805
+    second: SteamMan_run_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SteamMan_climb_0
+      name: SteamMan_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be35202cd5b1b83e0800000000000000
-      internalID: -2050515115836288021
+      spriteID: 180b1ea9183bcb490800000000000000
+      internalID: -7729105491243978623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteamMan_climb_1
+      name: SteamMan_run_1
       rect:
         serializedVersion: 2
         x: 48
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edccfb8781d6f77a0800000000000000
-      internalID: -6377258595460854562
+      spriteID: b0cd37b04e71c16b0800000000000000
+      internalID: -5324354391246644213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteamMan_climb_2
+      name: SteamMan_run_2
       rect:
         serializedVersion: 2
         x: 96
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f78716363246c1f0800000000000000
-      internalID: -1025059064577030151
+      spriteID: f5f8fe915a6c45240800000000000000
+      internalID: 4779663516953972575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteamMan_climb_3
+      name: SteamMan_run_3
       rect:
         serializedVersion: 2
         x: 144
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f182a29878abffa30800000000000000
-      internalID: 4251321664545630239
+      spriteID: 16015e09138074740800000000000000
+      internalID: 5136082909016690785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteamMan_climb_4
+      name: SteamMan_run_4
       rect:
         serializedVersion: 2
         x: 192
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef703d144b806e620800000000000000
-      internalID: 2802937388376197118
+      spriteID: 4ff21be4587af8510800000000000000
+      internalID: 1553644587458834420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteamMan_climb_5
+      name: SteamMan_run_5
       rect:
         serializedVersion: 2
         x: 240
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474b5e4b990cf25e0800000000000000
-      internalID: -1932113948721171340
+      spriteID: 561ebb2393d716620800000000000000
+      internalID: 2765629330799976805
       vertices: []
       indices: 
       edges: []
