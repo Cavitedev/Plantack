@@ -34,19 +34,19 @@ namespace Plantack.Interactable
                 localizedMessages.Select(s => s.GetLocalizedString()).ToArray();
             _messages = new string[asyncMessages.Length];
 
-            ResourceManager _resourceManager = Addressables.ResourceManager;
+            ResourceManager resourceManager = Addressables.ResourceManager;
 
             for (var i = 0; i < asyncMessages.Length; i++)
             {
                 AsyncOperationHandle<string> asyncOperationHandle = asyncMessages[i];
-                _resourceManager.Acquire(asyncOperationHandle);
+                resourceManager.Acquire(asyncOperationHandle);
                 if (!asyncOperationHandle.IsDone)
                 {
                     yield return asyncOperationHandle;
                 }
 
                 _messages[i] = asyncOperationHandle.Result;
-                _resourceManager.Release(asyncOperationHandle);
+                resourceManager.Release(asyncOperationHandle);
             }
 
 
