@@ -19136,29 +19136,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
---- !u!1 &921209655 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8895939246222740956, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-  m_PrefabInstance: {fileID: 1550149226}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &921209656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921209655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eaf0fcba74c46a1979a96e26b44d60f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveTime: 4
-  waitTime: 8
-  stopTime: 4
-  speed: 2
-  moveLeftFirst: 1
-  currentDir: {x: 0, y: 0}
 --- !u!4 &926570151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8328982202365572252, guid: a9b11265166aba447a5498c8310afd8b, type: 3}
@@ -49649,17 +49626,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8895939246222740930, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8895939246222740956, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
       propertyPath: m_Name
       value: Brownfrog
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1703363165491774429, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
-    - {fileID: -6784247473960399723, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb108fbd6e93724fb1b90333224deff, type: 3}
 --- !u!1001 &1588630710
 PrefabInstance:
