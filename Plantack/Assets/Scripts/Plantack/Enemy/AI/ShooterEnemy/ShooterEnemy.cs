@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class ShooterEnemy : MonoBehaviour
 {
     #region Shooting Vars
     public float targetRange = 5f;

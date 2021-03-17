@@ -53,5 +53,18 @@ MonoBehaviour:
       jugador de izquierda a la derecha. O usa un teclado o un mando de consola"
     m_Metadata:
       m_Items: []
+  - m_Id: 2458363894026240
+    m_Localized: "Pulsa el bot\xF3n de sulto, o presiona el espacio. O pulsa A en
+      el mando para saltar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2458924072685568
+    m_Localized: Evita a los enemigos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2459285718159360
+    m_Localized: "\xA1Enhorabuena, has superado el primer nivel!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -47,6 +47,18 @@ MonoBehaviour:
     m_Key: WAKE_UP4
     m_Metadata:
       m_Items: []
+  - m_Id: 2458363894026240
+    m_Key: JUMP_EXPLAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2458924072685568
+    m_Key: ENEMEIS_EXPLAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2459285718159360
+    m_Key: GOAL_EXPLAIN
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

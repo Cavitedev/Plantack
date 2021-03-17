@@ -53,5 +53,17 @@ MonoBehaviour:
       use a keyboard or a gamepad
     m_Metadata:
       m_Items: []
+  - m_Id: 2458363894026240
+    m_Localized: Press jump button, space. Or press A at the gamepad to jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2458924072685568
+    m_Localized: Avoid the enemies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2459285718159360
+    m_Localized: Congratulations first level cleared!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
