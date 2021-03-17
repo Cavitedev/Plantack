@@ -28871,25 +28871,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 229318581521453759, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
-      propertyPath: m_text
-      value: OPTIONS
-      objectReference: {fileID: 0}
     - target: {fileID: 229318581670307663, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 229318581670307665, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
-      propertyPath: m_text
-      value: PLAY
-      objectReference: {fileID: 0}
     - target: {fileID: 229318581760827256, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 229318581760827258, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
-      propertyPath: m_text
-      value: EXIT
       objectReference: {fileID: 0}
     - target: {fileID: 1858727220361884440, guid: ab4e30e9332ac044585dfe71ee86a47e, type: 3}
       propertyPath: m_AnchorMax.y

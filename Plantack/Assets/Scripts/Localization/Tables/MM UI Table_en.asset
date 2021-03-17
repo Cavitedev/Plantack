@@ -74,5 +74,13 @@ MonoBehaviour:
     m_Localized: Falling does not inflict damage
     m_Metadata:
       m_Items: []
+  - m_Id: 2502164093546496
+    m_Localized: RESUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2502275695587328
+    m_Localized: RESTART
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

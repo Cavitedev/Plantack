@@ -75,5 +75,13 @@ MonoBehaviour:
     m_Localized: "Las ca\xEDdas no causan da\xF1o"
     m_Metadata:
       m_Items: []
+  - m_Id: 2502164093546496
+    m_Localized: REANUDAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2502275695587328
+    m_Localized: REINICIAR
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

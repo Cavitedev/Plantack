@@ -67,6 +67,14 @@ MonoBehaviour:
     m_Key: FALL_EXPLAIN
     m_Metadata:
       m_Items: []
+  - m_Id: 2502164093546496
+    m_Key: RESUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2502275695587328
+    m_Key: RESTART
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
