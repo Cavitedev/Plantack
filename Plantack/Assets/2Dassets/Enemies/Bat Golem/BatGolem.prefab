@@ -159,14 +159,18 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7429720677944420386, guid: b054ae1dc2658f54d8a8bfee25edd6ae, type: 3}
   shootPoint: {fileID: 0}
   distance: 0
-  speed: 0
-  stoppingDist: 4
-  retreatDist: 3
   rb: {fileID: 0}
   layer:
     serializedVersion: 2
     m_Bits: 256
   player: {fileID: 0}
+  Engaged: 0
+  turned: 0
+  movSpeed: 0
+  retSpeed: 0
+  stoppingDist: 0
+  retreatDist: 0
+  EngageDist: 0
 --- !u!1 &7103695633497735977
 GameObject:
   m_ObjectHideFlags: 0

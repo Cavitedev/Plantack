@@ -71,6 +71,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageDisplay: {fileID: 0}
-  messages:
-  - "Buenos d\xEDas, te has levantado en un lugar"
-  - "Mu\xE9vete y gana"
+  localizedMessages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e1c199098b710a644b188defbbd72442
+    m_TableEntryReference:
+      m_KeyId: 2467670819721216
+      m_Key: 
+    m_FallbackState: 0

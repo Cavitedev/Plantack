@@ -10,7 +10,7 @@ public class Bullet_1 : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(gameObject.name + " enabled");
+        speed = 4f;
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectsWithTag("Player")[0];
 

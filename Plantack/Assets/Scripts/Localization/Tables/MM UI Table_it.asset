@@ -35,15 +35,50 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2428375077605376
-    m_Localized: WAKE UP... TODO
+    m_Localized: Vedo che sei sveglio. Sono passati migliaia di anni, sai dove sei?
     m_Metadata:
       m_Items: []
   - m_Id: 2443991327035392
-    m_Localized: TODO
+    m_Localized: "C'\xE8 stato un grande incidente anni fa, ma non non c\xE8 tempo
+      per spiegarlo in dettagli adesso."
     m_Metadata:
       m_Items: []
   - m_Id: 2447155132485632
-    m_Localized: 
+    m_Localized: Prova a moverti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2446215985876992
+    m_Localized: Devi riuscire a ricordare la tua destinazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2458363894026240
+    m_Localized: Ti ricordi come si salta? Prova a saltare su per procedere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2458924072685568
+    m_Localized: Meglio evitare le creature velenose, sono preicolose per chi li
+      tocca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2459285718159360
+    m_Localized: Bravo, sei riuscito a superare il primo livello!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2467670819721216
+    m_Localized: Per salire sulle scale, devi avvicinati alla scala ed usare il tasto
+      "c" sulla tastiera, o "y" sulla gamepad, o premere il bottone per touchscreen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2467705074601984
+    m_Localized: Le cadute non infliggano nessun danno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2502164093546496
+    m_Localized: RIPRENDI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2502275695587328
+    m_Localized: RIAVVIA
     m_Metadata:
       m_Items: []
   references:

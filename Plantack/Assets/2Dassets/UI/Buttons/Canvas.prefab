@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6108132063171197572}
   - component: {fileID: 7000227863830998195}
   m_Layer: 5
-  m_Name: FallB
+  m_Name: Climb-B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
