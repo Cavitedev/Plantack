@@ -39,5 +39,19 @@ MonoBehaviour:
       est\xE1s?"
     m_Metadata:
       m_Items: []
+  - m_Id: 2443991327035392
+    m_Localized: "Hubo un gran accidente hace muchos a\xF1os, pero no pud\xEDmos
+      a\xF1adirte lo detalles aqu\xED por las prisas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2446215985876992
+    m_Localized: "Deber\xEDas ser capaz de recordar tu destino"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2447155132485632
+    m_Localized: "Intenta utilizar el bot\xF3n en forma the joystick para mover el
+      jugador de izquierda a la derecha. O usa un teclado o un mando de consola"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

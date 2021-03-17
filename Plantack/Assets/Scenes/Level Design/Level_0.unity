@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
       propertyPath: localizedMessages.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
       propertyPath: messagesV2.Array.data[0].m_TableEntryReference.m_KeyId
@@ -151,11 +151,35 @@ PrefabInstance:
       value: 2428375077605376
       objectReference: {fileID: 0}
     - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[1].m_TableEntryReference.m_KeyId
+      value: 2443991327035392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[2].m_TableEntryReference.m_KeyId
+      value: 2446215985876992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[3].m_TableEntryReference.m_KeyId
+      value: 2447155132485632
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
       propertyPath: messagesV2.Array.data[0].m_TableReference.m_TableCollectionName
       value: GUID:e1c199098b710a644b188defbbd72442
       objectReference: {fileID: 0}
     - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
       propertyPath: localizedMessages.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:e1c199098b710a644b188defbbd72442
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[1].m_TableReference.m_TableCollectionName
+      value: GUID:e1c199098b710a644b188defbbd72442
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[2].m_TableReference.m_TableCollectionName
+      value: GUID:e1c199098b710a644b188defbbd72442
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667284267144920433, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}
+      propertyPath: localizedMessages.Array.data[3].m_TableReference.m_TableCollectionName
       value: GUID:e1c199098b710a644b188defbbd72442
       objectReference: {fileID: 0}
     - target: {fileID: 8667284267144920438, guid: 779ab0af01ae0a0418311433f19983d5, type: 3}

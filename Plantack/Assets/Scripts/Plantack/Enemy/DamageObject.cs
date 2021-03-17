@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Plantack.Enemy
 {
     
-    public abstract class DamageObject : MonoBehaviour, IStatsCollider
+    public class DamageObject : MonoBehaviour, IStatsCollider
     {
 
         [SerializeField] private float damage = 1;
