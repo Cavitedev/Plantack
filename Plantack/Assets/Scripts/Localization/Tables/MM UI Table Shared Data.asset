@@ -59,6 +59,14 @@ MonoBehaviour:
     m_Key: GOAL_EXPLAIN
     m_Metadata:
       m_Items: []
+  - m_Id: 2467670819721216
+    m_Key: LADDERS_EXPLAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2467705074601984
+    m_Key: FALL_EXPLAIN
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
