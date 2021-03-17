@@ -21,9 +21,6 @@ public class ShooterEnemy : MonoBehaviour
     #endregion
     public float distance;
     Vector2 Direction;
-    public float speed;
-    public float stoppingDist;
-    public float retreatDist;
     public Rigidbody2D rb;
     public LayerMask layer;
     public Transform player;
@@ -49,11 +46,7 @@ public class ShooterEnemy : MonoBehaviour
     private void FixedUpdate()
     {
         castRay();
-    }
-    private float GetDistance(Transform player)
-    {
-        return Vector2.Distance(transform.position, player.position);
-    }
+    }    
 
     #region Shoot
     private void castRay()

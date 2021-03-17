@@ -12,11 +12,11 @@ public class Bullet_1 : MonoBehaviour
     {
         Debug.Log(gameObject.name + " enabled");
         rb = GetComponent<Rigidbody2D>();
-        
+        target = GameObject.FindGameObjectsWithTag("Player")[0];
+
     }
     private void Update()
     {
-        target = GameObject.FindGameObjectsWithTag("Player")[0];
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         rb.velocity = moveDir;
     }
