@@ -404,7 +404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8418387112411525895}
   m_Layer: 5
-  m_Name: Buttons
+  m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,14 +894,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 4628541757519387050, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 4628541757519387050, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 4628541757588585904, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
       propertyPath: m_SizeDelta.x
       value: 144
@@ -977,10 +969,6 @@ PrefabInstance:
     - target: {fileID: 4628541757617792215, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
       propertyPath: m_SizeDelta.y
       value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 4628541757617792215, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 4628541757617792215, guid: 2a6a3347999700a4abb47545aea45273, type: 3}
       propertyPath: m_AnchoredPosition.y
