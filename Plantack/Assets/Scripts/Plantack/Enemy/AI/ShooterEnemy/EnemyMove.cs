@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
     Transform player;
+    Transform shootPoint;
     Rigidbody2D rb;
+
 
     Quaternion rot;
     public bool Engaged;
@@ -16,10 +18,11 @@ public class EnemyMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        shootPoint = transform.GetChild(0);
         rot = new Quaternion (0,0,0,1);
         Speed = 1f;
-        retreatDist = 3f;
-        stoppingDist = 5f;
+        retreatDist = 2f;
+        stoppingDist = 3f;
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectsWithTag("Player")[0].transform;
     }
@@ -39,7 +42,7 @@ public class EnemyMove : MonoBehaviour
             }
             else if (GetDistance() <= retreatDist)
             {
-                Move(-Speed, false);
+                Move(-Speed, true);
             }
             else
             {
@@ -49,22 +52,26 @@ public class EnemyMove : MonoBehaviour
     }
     private float GetDistance()
     {
-        return Vector2.Distance(transform.position, player.position);
+        return Vector2.Distance(shootPoint.position, player.position);
     }
     private void Move(float Speed, bool towards)
     {
-        Vector2 moveDir = (player.transform.position - transform.position).normalized * Speed;
+        Vector2 moveDir = (player.transform.position - shootPoint.position).normalized * Speed;
         rb.velocity = moveDir;
+
         if (!towards)
         {
-            if (moveDir.x < 0 && rot.y != 180)
+            shootPoint.transform.LookAt(player);
+            if (moveDir.x < 0 && transform.localScale.x != -1)
+                transform.localScale = new Vector3(-1, 1, 1);
+            else if (moveDir.x > 0 && transform.localScale.x != 1)
+                transform.localScale = new Vector3(1, 1, 1);
+
+            if (shootPoint.transform.rotation.z > -0.25f && shootPoint.transform.rotation.z < 0.25f)
             {
-                rot.y = 180f;
-                transform.rotation = rot;
-            }
-            else if (moveDir.x > 0 && rot.y != 0)
-            {
-                rot.y = 0f;
+                rot = shootPoint.rotation;
+                rot.y = 0.0f;
+                rot.x = 0.0f;
                 transform.rotation = rot;
             }
         }
